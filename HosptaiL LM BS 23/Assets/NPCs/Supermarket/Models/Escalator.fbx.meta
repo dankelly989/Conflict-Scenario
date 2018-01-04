@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 08581b5814931d647ace0a54a6e81b45
+timeCreated: 1469090490
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Ladder
+    100004: Rails
+    100006: step_1
+    100008: step_10
+    100010: step_11
+    100012: step_12
+    100014: step_13
+    100016: step_14
+    100018: step_15
+    100020: step_16
+    100022: step_17
+    100024: step_18
+    100026: step_19
+    100028: step_2
+    100030: step_20
+    100032: step_21
+    100034: step_22
+    100036: step_23
+    100038: step_24
+    100040: step_25
+    100042: step_26
+    100044: step_27
+    100046: step_28
+    100048: step_29
+    100050: step_3
+    100052: step_4
+    100054: step_5
+    100056: step_6
+    100058: step_7
+    100060: step_8
+    100062: step_9
+    400000: //RootNode
+    400002: Ladder
+    400004: Rails
+    400006: step_1
+    400008: step_10
+    400010: step_11
+    400012: step_12
+    400014: step_13
+    400016: step_14
+    400018: step_15
+    400020: step_16
+    400022: step_17
+    400024: step_18
+    400026: step_19
+    400028: step_2
+    400030: step_20
+    400032: step_21
+    400034: step_22
+    400036: step_23
+    400038: step_24
+    400040: step_25
+    400042: step_26
+    400044: step_27
+    400046: step_28
+    400048: step_29
+    400050: step_3
+    400052: step_4
+    400054: step_5
+    400056: step_6
+    400058: step_7
+    400060: step_8
+    400062: step_9
+    2300000: Rails
+    2300002: step_1
+    2300004: step_10
+    2300006: step_11
+    2300008: step_12
+    2300010: step_13
+    2300012: step_14
+    2300014: step_15
+    2300016: step_16
+    2300018: step_17
+    2300020: step_18
+    2300022: step_19
+    2300024: step_2
+    2300026: step_20
+    2300028: step_21
+    2300030: step_22
+    2300032: step_23
+    2300034: step_24
+    2300036: step_25
+    2300038: step_26
+    2300040: step_27
+    2300042: step_28
+    2300044: step_29
+    2300046: step_3
+    2300048: step_4
+    2300050: step_5
+    2300052: step_6
+    2300054: step_7
+    2300056: step_8
+    2300058: step_9
+    3300000: Rails
+    3300002: step_1
+    3300004: step_10
+    3300006: step_11
+    3300008: step_12
+    3300010: step_13
+    3300012: step_14
+    3300014: step_15
+    3300016: step_16
+    3300018: step_17
+    3300020: step_18
+    3300022: step_19
+    3300024: step_2
+    3300026: step_20
+    3300028: step_21
+    3300030: step_22
+    3300032: step_23
+    3300034: step_24
+    3300036: step_25
+    3300038: step_26
+    3300040: step_27
+    3300042: step_28
+    3300044: step_29
+    3300046: step_3
+    3300048: step_4
+    3300050: step_5
+    3300052: step_6
+    3300054: step_7
+    3300056: step_8
+    3300058: step_9
+    4300000: Rails
+    4300002: step_1
+    4300004: step_2
+    4300006: step_3
+    4300008: step_4
+    4300010: step_5
+    4300012: step_6
+    4300014: step_7
+    4300016: step_8
+    4300018: step_9
+    4300020: step_10
+    4300022: step_11
+    4300024: step_12
+    4300026: step_13
+    4300028: step_14
+    4300030: step_15
+    4300032: step_16
+    4300034: step_17
+    4300036: step_18
+    4300038: step_19
+    4300040: step_20
+    4300042: step_21
+    4300044: step_22
+    4300046: step_23
+    4300048: step_24
+    4300050: step_25
+    4300052: step_26
+    4300054: step_27
+    4300056: step_28
+    4300058: step_29
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ladder
+        weight: 1
+      - path: Ladder/step_1
+        weight: 1
+      - path: Ladder/step_2
+        weight: 1
+      - path: Ladder/step_3
+        weight: 1
+      - path: Ladder/step_4
+        weight: 1
+      - path: Ladder/step_5
+        weight: 1
+      - path: Ladder/step_6
+        weight: 1
+      - path: Ladder/step_7
+        weight: 1
+      - path: Ladder/step_8
+        weight: 1
+      - path: Ladder/step_9
+        weight: 1
+      - path: Ladder/step_10
+        weight: 1
+      - path: Ladder/step_11
+        weight: 1
+      - path: Ladder/step_12
+        weight: 1
+      - path: Ladder/step_13
+        weight: 1
+      - path: Ladder/step_14
+        weight: 1
+      - path: Ladder/step_15
+        weight: 1
+      - path: Ladder/step_16
+        weight: 1
+      - path: Ladder/step_17
+        weight: 1
+      - path: Ladder/step_18
+        weight: 1
+      - path: Ladder/step_19
+        weight: 1
+      - path: Ladder/step_20
+        weight: 1
+      - path: Ladder/step_21
+        weight: 1
+      - path: Ladder/step_22
+        weight: 1
+      - path: Ladder/step_23
+        weight: 1
+      - path: Ladder/step_24
+        weight: 1
+      - path: Ladder/step_25
+        weight: 1
+      - path: Ladder/step_26
+        weight: 1
+      - path: Ladder/step_27
+        weight: 1
+      - path: Ladder/step_28
+        weight: 1
+      - path: Ladder/step_29
+        weight: 1
+      - path: Rails
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .300000012
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
