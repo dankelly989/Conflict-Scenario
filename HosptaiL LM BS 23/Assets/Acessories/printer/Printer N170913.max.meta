@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 8b3c2464db11e674b95bd647d1dd9f55
+timeCreated: 1495417961
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box2296
+    100002: Box2297
+    100004: Box2298
+    100006: Box2299
+    100008: Group01
+    100010: Particle View 01
+    100012: Particle View 01 1
+    100014: Particle View 01 10
+    100016: Particle View 01 11
+    100018: Particle View 01 12
+    100020: Particle View 01 13
+    100022: Particle View 01 14
+    100024: Particle View 01 15
+    100026: Particle View 01 16
+    100028: Particle View 01 2
+    100030: Particle View 01 3
+    100032: Particle View 01 4
+    100034: Particle View 01 5
+    100036: Particle View 01 6
+    100038: Particle View 01 7
+    100040: Particle View 01 8
+    100042: Particle View 01 9
+    100044: Particle View 02
+    100046: Particle View 02 1
+    100048: Particle View 03
+    100050: Particle View 03 1
+    100052: //RootNode
+    100054: VRayPlane01
+    400000: Box2296
+    400002: Box2297
+    400004: Box2298
+    400006: Box2299
+    400008: Group01
+    400010: Particle View 01
+    400012: Particle View 01 1
+    400014: Particle View 01 10
+    400016: Particle View 01 11
+    400018: Particle View 01 12
+    400020: Particle View 01 13
+    400022: Particle View 01 14
+    400024: Particle View 01 15
+    400026: Particle View 01 16
+    400028: Particle View 01 2
+    400030: Particle View 01 3
+    400032: Particle View 01 4
+    400034: Particle View 01 5
+    400036: Particle View 01 6
+    400038: Particle View 01 7
+    400040: Particle View 01 8
+    400042: Particle View 01 9
+    400044: Particle View 02
+    400046: Particle View 02 1
+    400048: Particle View 03
+    400050: Particle View 03 1
+    400052: //RootNode
+    400054: VRayPlane01
+    2300000: Box2296
+    2300002: Box2297
+    2300004: Box2298
+    2300006: Box2299
+    3300000: Box2296
+    3300002: Box2297
+    3300004: Box2298
+    3300006: Box2299
+    4300000: Box2299
+    4300002: Box2296
+    4300004: Box2297
+    4300006: Box2298
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

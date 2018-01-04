@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: fc228e591487570429ab020cf50a4a5a
+timeCreated: 1494903954
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DoubleDoor_01
+    100004: DoubleDoor_02
+    100006: DoubleDoor_03
+    100008: DoubleDoor_04
+    100010: DoubleDoor_05
+    100012: DoubleDoor_06
+    100014: DoubleDoor_07
+    100016: DoubleDoor_08
+    100018: DoubleDoor_09
+    100020: DoubleDoor_10
+    100022: DoubleDoor_11
+    100024: DoubleDoor_12
+    100026: DoubleDoor_13
+    100028: DoubleDoor_14
+    100030: DoubleDoor_15
+    100032: DoubleDoor_16
+    100034: DoubleDoor_17
+    100036: DoubleDoor_18
+    100038: DoubleDoor_19
+    100040: DoubleDoor_20
+    100042: DoubleDoor_21
+    100044: DoubleDoor_22
+    100046: DoubleDoor_23
+    100048: DoubleDoor_24
+    100050: DoubleDoor_25
+    100052: DoubleDoor_26
+    100054: DoubleDoor_27
+    100056: DoubleDoor_28
+    400000: //RootNode
+    400002: DoubleDoor_01
+    400004: DoubleDoor_02
+    400006: DoubleDoor_03
+    400008: DoubleDoor_04
+    400010: DoubleDoor_05
+    400012: DoubleDoor_06
+    400014: DoubleDoor_07
+    400016: DoubleDoor_08
+    400018: DoubleDoor_09
+    400020: DoubleDoor_10
+    400022: DoubleDoor_11
+    400024: DoubleDoor_12
+    400026: DoubleDoor_13
+    400028: DoubleDoor_14
+    400030: DoubleDoor_15
+    400032: DoubleDoor_16
+    400034: DoubleDoor_17
+    400036: DoubleDoor_18
+    400038: DoubleDoor_19
+    400040: DoubleDoor_20
+    400042: DoubleDoor_21
+    400044: DoubleDoor_22
+    400046: DoubleDoor_23
+    400048: DoubleDoor_24
+    400050: DoubleDoor_25
+    400052: DoubleDoor_26
+    400054: DoubleDoor_27
+    400056: DoubleDoor_28
+    2300000: DoubleDoor_01
+    2300002: DoubleDoor_02
+    2300004: DoubleDoor_03
+    2300006: DoubleDoor_04
+    2300008: DoubleDoor_05
+    2300010: DoubleDoor_06
+    2300012: DoubleDoor_07
+    2300014: DoubleDoor_08
+    2300016: DoubleDoor_09
+    2300018: DoubleDoor_10
+    2300020: DoubleDoor_11
+    2300022: DoubleDoor_12
+    2300024: DoubleDoor_13
+    2300026: DoubleDoor_14
+    2300028: DoubleDoor_15
+    2300030: DoubleDoor_16
+    2300032: DoubleDoor_17
+    2300034: DoubleDoor_18
+    2300036: DoubleDoor_19
+    2300038: DoubleDoor_20
+    2300040: DoubleDoor_21
+    2300042: DoubleDoor_22
+    2300044: DoubleDoor_23
+    2300046: DoubleDoor_24
+    2300048: DoubleDoor_25
+    2300050: DoubleDoor_26
+    2300052: DoubleDoor_27
+    2300054: DoubleDoor_28
+    3300000: DoubleDoor_01
+    3300002: DoubleDoor_02
+    3300004: DoubleDoor_03
+    3300006: DoubleDoor_04
+    3300008: DoubleDoor_05
+    3300010: DoubleDoor_06
+    3300012: DoubleDoor_07
+    3300014: DoubleDoor_08
+    3300016: DoubleDoor_09
+    3300018: DoubleDoor_10
+    3300020: DoubleDoor_11
+    3300022: DoubleDoor_12
+    3300024: DoubleDoor_13
+    3300026: DoubleDoor_14
+    3300028: DoubleDoor_15
+    3300030: DoubleDoor_16
+    3300032: DoubleDoor_17
+    3300034: DoubleDoor_18
+    3300036: DoubleDoor_19
+    3300038: DoubleDoor_20
+    3300040: DoubleDoor_21
+    3300042: DoubleDoor_22
+    3300044: DoubleDoor_23
+    3300046: DoubleDoor_24
+    3300048: DoubleDoor_25
+    3300050: DoubleDoor_26
+    3300052: DoubleDoor_27
+    3300054: DoubleDoor_28
+    4300000: DoubleDoor_01
+    4300002: DoubleDoor_02
+    4300004: DoubleDoor_03
+    4300006: DoubleDoor_04
+    4300008: DoubleDoor_05
+    4300010: DoubleDoor_06
+    4300012: DoubleDoor_07
+    4300014: DoubleDoor_08
+    4300016: DoubleDoor_09
+    4300018: DoubleDoor_10
+    4300020: DoubleDoor_11
+    4300022: DoubleDoor_12
+    4300024: DoubleDoor_13
+    4300026: DoubleDoor_14
+    4300028: DoubleDoor_15
+    4300030: DoubleDoor_16
+    4300032: DoubleDoor_17
+    4300034: DoubleDoor_18
+    4300036: DoubleDoor_19
+    4300038: DoubleDoor_20
+    4300040: DoubleDoor_21
+    4300042: DoubleDoor_22
+    4300044: DoubleDoor_23
+    4300046: DoubleDoor_24
+    4300048: DoubleDoor_25
+    4300050: DoubleDoor_26
+    4300052: DoubleDoor_27
+    4300054: DoubleDoor_28
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
