@@ -55,14 +55,6 @@ public class DoctorController2 : MonoBehaviour
 		walk5 = false;
 	}
 
-	void OnTriggerEnter(Collider other) 
-	{
-		if (other.tag == "Player")
-        { 
-            anim.SetTrigger("PlayerEnter");
-        }
-	}
-
 	void Update () 
 	{
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName("walk1")) 
