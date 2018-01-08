@@ -10,6 +10,7 @@ public class BombingSequence : MonoBehaviour
     BoxCollider exitStopper;
     SingleDoorOpen office;
     public List<Flicker> lights;
+    public List<GameObject> sparks;
 
     bool activated = false;
 
@@ -71,6 +72,10 @@ public class BombingSequence : MonoBehaviour
         }
         //items move
         //sparks
+        foreach(GameObject g in sparks)
+        {
+            g.SetActive(true);
+        }
         //Lights flicker
         lights[0].Startflicker();
     }
