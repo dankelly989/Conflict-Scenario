@@ -1,0 +1,253 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp-Editor.dll
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:Assets/NPCs/Skele/AnimatorSP/Files/Scripts/JsonFx.Json.dll
+-r:"Assets/NPCs/Skele/Common/FullSerializer/FullSerializer - Unity.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity 5.5.2f1/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_2
+-define:UNITY_5_5
+-define:UNITY_5
+-define:UNITY_64
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:CROSS_PLATFORM_INPUT
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMCodeView.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMEasePicker.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMOptions.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMOptionsFile.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMPropertySelect.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMSettings.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMTakeExport.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMTakeImport.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMTimeline.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/AMTransitionPicker.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/ObjInspect/AMTakeEditor.cs
+Assets/NPCs/Skele/AnimatorSP/Files/Editor/ObjInspect/AnimatorDataEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/AssetPostProcessor/FindBonePP.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Constraints/LimbConstraints.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Cutscene/CCEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Cutscene/Editor/CC_GUI_Editor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Cutscene/Editor/CC_JumpTo_Editor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Cutscene/PropertyDrawers/CCTimeTagDrawer.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Cutscene/PropertyDrawers/CCTrPathDrawer.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/DaeExporter/DaeExporter.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/DaeExporter/DaeExporterEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/GUIWindows/MirrorSettingWindow.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/HotFix.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/IKSolvers/LimbSolver.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/IKSolvers/TestCCD.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/MirrorCtrl.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/AnimCompressEditorWindow.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/AnimCurvePropEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/AnimMirrorEditorWindow.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/AnimationBaker.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/AnimatorDebugger.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/MeshPivotFixerEditorWindow.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/MirrorNameRegex.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/MuscleClipConverterEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/ShareSkeleEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/Misc/ShowBindPose.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/PoseSet.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/SMREditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/SelectionCtrl.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Editor/VersionCheck.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Scripts/IKSolvers/Editor/AngleConstraintEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Scripts/IKSolvers/Editor/CCDSolverEditor.cs
+Assets/NPCs/Skele/CharacterAnimationTools/Scripts/IKSolvers/Editor/ConeConstraintEditor.cs
+Assets/NPCs/Skele/Common/Attributes/Editor/CommonAttributeProcessorEditor.cs
+Assets/NPCs/Skele/Common/Attributes/Editor/TagNLayer.cs
+Assets/NPCs/Skele/Common/DataStruct/Editor/BDictPropertyDrawer.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDOBool.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDOFloat.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDOInt.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDOString.cs
+Assets/NPCs/Skele/Common/Editor/EData/EData.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDataInspector.cs
+Assets/NPCs/Skele/Common/Editor/EData/EDataObj.cs
+Assets/NPCs/Skele/Common/Editor/ETimeProf.cs
+Assets/NPCs/Skele/Common/Editor/EUtil.cs
+Assets/NPCs/Skele/Common/Editor/EditorEditorWindow.cs
+Assets/NPCs/Skele/Common/Editor/EmptyMarkerEditor.cs
+Assets/NPCs/Skele/Common/Editor/GUIWindowMgr.cs
+Assets/NPCs/Skele/Common/Editor/ParticleMarker.cs
+Assets/NPCs/Skele/Common/Editor/PreferenceItem.cs
+Assets/NPCs/Skele/Common/Editor/UndoCont.cs
+Assets/NPCs/Skele/Common/Editor/ViewRotate.cs
+Assets/NPCs/Skele/Constraints/Editor/BaseConstraintEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/BipedConstraintSetupWindow.cs
+Assets/NPCs/Skele/Constraints/Editor/ChildOfEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/ClampToEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/ConstraintManagerEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/ConstraintStackEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/ConstraintsWindow.cs
+Assets/NPCs/Skele/Constraints/Editor/CopyPositionEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/CopyRotationEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/CopyScaleEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/CopyTransformEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/EConUtil.cs
+Assets/NPCs/Skele/Constraints/Editor/FloorEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/FollowPathEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LimitDistanceEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LimitLocationEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LimitRotationEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LimitScaleEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LockedTrackEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/LookAtEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/MaintainVolumeEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/ShrinkWrapEditor.cs
+Assets/NPCs/Skele/Constraints/Editor/TransformMappingEditor.cs
+Assets/NPCs/Skele/MeshEditor/Editor/EditorCursor.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshManipulator.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshMarker.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshSelection.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshUndoer.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshUtil/EdgeMarker.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshUtil/MeshCache.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshUtil/TriMarker.cs
+Assets/NPCs/Skele/MeshEditor/Editor/MeshUtil/VertMarker.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/DeformOp/MoveVerts.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/DeformOp/RotateVerts.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/DeformOp/ScaleVerts.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/EdgeLoopSelectOp.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/FixBoundNormalOp.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/OpUtil.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Operations/RecalcNormalOp.cs
+Assets/NPCs/Skele/MeshEditor/Editor/OverlapChecker.cs
+Assets/NPCs/Skele/MeshEditor/Editor/Pivotor.cs
+Assets/NPCs/Skele/MeshEditor/Editor/ShortcutListWindow.cs
+Assets/NPCs/Skele/MeshEditor/Editor/SoftSelection/SoftSelection.cs
+Assets/NPCs/Skele/MeshEditor/Editor/SoftSelection/SoftSelectionRes.cs
+Assets/NPCs/Skele/MeshEditor/Editor/UndoMesh.cs
+Assets/NPCs/Skele/MeshEditor/Editor/VMesh/VEdge.cs
+Assets/NPCs/Skele/MeshEditor/Editor/VMesh/VFace.cs
+Assets/NPCs/Skele/MeshEditor/Editor/VMesh/VMesh.cs
+Assets/NPCs/Skele/MeshEditor/Editor/VMesh/VMeshUtil.cs
+Assets/NPCs/Skele/MeshEditor/Editor/VMesh/VVert.cs
+Assets/NPCs/Skele/Spline/Editor/CatmullRomCentripetalBehaviourEditor.cs
+Assets/NPCs/Skele/Spline/Editor/CatmullRomUniformBehaviourEditor.cs
+Assets/NPCs/Skele/Spline/Editor/ISplineEditor.cs
+Assets/NPCs/Skele/VertAnimation/Editor/BaseMorphSOEditor.cs
+Assets/NPCs/Skele/VertAnimation/Editor/EditorRes.cs
+Assets/NPCs/Skele/VertAnimation/Editor/MorphProcEditor.cs
+Assets/NPCs/Skele/VertAnimation/Editor/ShapeKeyMorphSOEditor.cs
+"Assets/Rogo Digital/LipSync Pro/AutoSync/Editor/AutoSync.cs"
+"Assets/Rogo Digital/LipSync Pro/AutoSync/Editor/AutoSyncLanguageModel.cs"
+"Assets/Rogo Digital/LipSync Pro/AutoSync/Editor/AutoSyncLanguageModelEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/AutoSync/Editor/SphinxWrapper.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/AudioUtility.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/BakeBlendshapesTool.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/BlendSystemEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/EyeControllerEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/GestureSetupWizard.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncClipSetup.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncDataEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncEditorExtensions.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncPresetUtility.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/LipSyncProjectSettings.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/AutoSyncWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/ClipSettingsWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/DefaultMarkerSettingsWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/EmotionMixerWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/MarkerSettingsWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/Modals/SetIntensityWindow.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/PhonemeSetEditor.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/PoseExtractorWizard.cs"
+"Assets/Rogo Digital/LipSync Pro/Editor/SpriteManagerEditor.cs"
+"Assets/Rogo Digital/Shared/Editor/ContinuationManager.cs"
+"Assets/Rogo Digital/Shared/Editor/ModalParent.cs"
+"Assets/Rogo Digital/Shared/Editor/ModalWindow.cs"
+"Assets/Rogo Digital/Shared/Editor/RDEditorShortcut.cs"
+"Assets/Rogo Digital/Shared/Editor/RDExtensionWindow.cs"
+"Assets/Rogo Digital/Shared/Editor/WizardWindow.cs"
+"Assets/Ultimate Game Tools/ConcaveCollider/Editor/ConcaveColliderEditor.cs"
+-r:"C:\Program Files\Unity 5.5.2f1\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity 5.5.2f1\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity 5.5.2f1\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"C:\Program Files\Unity 5.5.2f1\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity 5.5.2f1\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
+-sdk:2.0

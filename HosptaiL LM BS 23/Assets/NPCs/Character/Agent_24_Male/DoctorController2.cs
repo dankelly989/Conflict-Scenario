@@ -41,7 +41,7 @@ public class DoctorController2 : MonoBehaviour
 	private Transform playerPostion;
 	private NavMeshAgent agent;
 
-	void Start () 
+    void Start () 
 	{
         agent = this.GetComponent<NavMeshAgent>();
         anim = GetComponent <Animator> ();
