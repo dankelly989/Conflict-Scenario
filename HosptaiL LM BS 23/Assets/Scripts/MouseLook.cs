@@ -186,7 +186,7 @@ public class MouseLook : MonoBehaviour
             {
                 nextRecord = Time.time + recordRate;
                 Transform ct = Camera.main.transform;
-                recordFile.WriteLine("<event><time>" + (Time.time - recordStart).ToString() + "</time><pose><t>" + ct.localRotation.eulerAngles.x + "</t><u>" + ct.localRotation.eulerAngles.y + "</u><v>" + ct.localRotation.eulerAngles.z + "</v><w>" + ct.localRotation.w + "</w></pose><position><x>" + ct.position.x + "</x><y>" + ct.position.y + "</y><z>" + ct.position.z + "</z></poition></event>");
+                //recordFile.WriteLine("<event><time>" + (Time.time - recordStart).ToString() + "</time><pose><t>" + ct.localRotation.eulerAngles.x + "</t><u>" + ct.localRotation.eulerAngles.y + "</u><v>" + ct.localRotation.eulerAngles.z + "</v><w>" + ct.localRotation.w + "</w></pose><position><x>" + ct.position.x + "</x><y>" + ct.position.y + "</y><z>" + ct.position.z + "</z></poition></event>");
 
                 if (objectIN && OnAction == false)
                 {
@@ -297,7 +297,7 @@ public class MouseLook : MonoBehaviour
 
         public static bool Save(string filename, AudioClip clip)
         {
-            if (!filename.ToLower().EndsWith(".wav"))
+            /*if (!filename.ToLower().EndsWith(".wav"))
             {
                 filename += ".wav";
             }
@@ -316,7 +316,7 @@ public class MouseLook : MonoBehaviour
 
                 WriteHeader(fileStream, clip);
             }
-
+            */
             return true; // TODO: return false if there's a failure saving the file
         }
 

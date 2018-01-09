@@ -75,7 +75,7 @@ public class EarthQuake : MonoBehaviour
         volume = true;
         light1 = GameObject.Find("lightRoom1");
         light2 = GameObject.Find("lightRoom2");
-        printerSpark.active = false;
+        //printerSpark.active = false;
         plaster1 = GameObject.Find("plaster1");
         plaster2 = GameObject.Find("plaster2");
         proj1 = GameObject.Find("SpotlightP");

@@ -5,8 +5,7 @@ using UnityEngine;
 public class Flicker : MonoBehaviour {
     public float minSpeed;
     public float maxSpeed;
-    private Light light;
-    public GameObject lightFitting;
+    public Light lighting;
     private MeshRenderer mesh;
      
     private Color defaultAl;
@@ -14,22 +13,21 @@ public class Flicker : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        light = GetComponent<Light>();
-        mesh = lightFitting.GetComponent<MeshRenderer>();
+        mesh = GetComponent<MeshRenderer>();
         defaultAl = mesh.materials[0].GetColor("_Color");
         defaultEm = mesh.materials[0].GetColor("_EmissionColor");
 	}
 
     public void turnOn()
     {
-        light.enabled = true;
+        lighting.enabled = true;
         mesh.materials[0].SetColor("_Color", defaultAl);
         mesh.materials[0].SetColor("_EmissionColor", defaultEm);
     }
 
     public void turnOff()
     {
-        light.enabled = false;
+        lighting.enabled = false;
         mesh.materials[0].SetColor("_Color", Color.black);
         mesh.materials[0].SetColor("_EmissionColor", Color.black);
     }
@@ -49,7 +47,7 @@ public class Flicker : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSpeed, maxSpeed));
-            if (light.enabled)
+            if (lighting.enabled)
             {
                 turnOff();
             }

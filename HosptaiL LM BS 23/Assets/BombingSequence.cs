@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BombingSequence : MonoBehaviour
 {
     Animator doctor;
     Canvas textbox;
+    Text yemenDocotrText;
     SingleDoorOpen ward;
     BoxCollider exitStopper;
     SingleDoorOpen office;
+    QuakeShake quake;
     public List<Flicker> lights;
     public List<GameObject> sparks;
+    public List<GameObject> brokenObjects;
+    public List<GameObject> newObjects;
 
     bool activated = false;
 
@@ -19,9 +24,11 @@ public class BombingSequence : MonoBehaviour
         doctor = GameObject.Find("YemenDoctor").GetComponent<Animator>();
         textbox = GameObject.Find("TextBoxCanvas").GetComponent<Canvas>();
         textbox.enabled = false;
+        yemenDocotrText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
         exitStopper = GameObject.Find("exitstopper (1)").GetComponent<BoxCollider>();
+        quake = GameObject.Find("PlayerTrigger").GetComponent<QuakeShake>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -55,7 +62,9 @@ public class BombingSequence : MonoBehaviour
     {
         if (doctor.GetCurrentAnimatorStateInfo(0).IsName("Stand") && !activated)
         {
+            yemenDocotrText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
             textbox.enabled = true;
+
             StartCoroutine(wait10());
             activated = true;
         }
@@ -63,19 +72,35 @@ public class BombingSequence : MonoBehaviour
 
     private void explosion()
     {
+        //Play sound
         this.GetComponent<AudioSource>().Play();
+
         //screen shake
+        quake.quake();
+
         //lights go off
         foreach(Flicker f in lights)
         {
             f.turnOff();
         }
+
         //items move
-        //sparks
-        foreach(GameObject g in sparks)
+        foreach (GameObject g in brokenObjects)
+        {
+            g.SetActive(false);
+        }
+        foreach (GameObject g in newObjects)
         {
             g.SetActive(true);
         }
+        //lights
+
+        //sparks
+        foreach (GameObject g in sparks)
+        {
+            g.SetActive(true);
+        }
+
         //Lights flicker
         lights[0].Startflicker();
     }
