@@ -20,20 +20,17 @@ public class DoctorController2 : MonoBehaviour
 	public Transform walk2Target;
 	public Transform walk3Target;
 	public Transform walk4Target;
-	public Transform walk5Target;
+    public Transform walk5Target;
+    public Transform walk6Target;
 
-	private bool walk1;
+    private bool walk1;
 	private bool walk2;
-	public bool walk3;
+	private bool walk3;
 	private bool walk4;
 	private bool walk5;
 
-	private float dist1;
-	private float dist2;
-	private float dist3;
-	private float dist4;
-	private float dist5;
-	public float distp;
+    private float dist;
+    private bool part1 = true;
 
 	private Animator anim;
     private LipSync ls;
@@ -113,8 +110,8 @@ public class DoctorController2 : MonoBehaviour
 		{
 			agent.SetDestination(walk1Target.position);
             agent.Resume();
-            dist1 = Vector3.Distance (walk1Target.position, transform.position);
-			if (dist1 < 0.01f) 
+            dist = Vector3.Distance (walk1Target.position, transform.position);
+			if (dist < 0.01f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position1",true);
@@ -127,8 +124,8 @@ public class DoctorController2 : MonoBehaviour
 		{
             agent.SetDestination(walk2Target.position);
             agent.Resume();
-            dist2 = Vector3.Distance (walk2Target.position, transform.position);
-			if (dist2 < 0.01) 
+            dist = Vector3.Distance (walk2Target.position, transform.position);
+			if (dist < 0.01) 
 			{
                 agent.Stop();
                 anim.SetBool("Position2", true);
@@ -141,8 +138,8 @@ public class DoctorController2 : MonoBehaviour
         { 
             agent.SetDestination(walk3Target.position);
             agent.Resume();
-            dist3 = Vector3.Distance (walk3Target.position, transform.position);
-			if (dist3 < 0.01f) 
+            dist = Vector3.Distance (walk3Target.position, transform.position);
+			if (dist < 0.01f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position3", true);
@@ -155,8 +152,8 @@ public class DoctorController2 : MonoBehaviour
 		{
 			agent.SetDestination(walk4Target.position);
             agent.Resume();
-            dist4 = Vector3.Distance (walk4Target.position, transform.position);
-			if (dist4 < 0.01f) 
+            dist = Vector3.Distance (walk4Target.position, transform.position);
+			if (dist < 0.01f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position4", true);
@@ -165,21 +162,33 @@ public class DoctorController2 : MonoBehaviour
             }
 		}
 
-		if (walk5) 
-		{
-            agent.SetDestination(walk5Target.position);
-            agent.Resume();
-            dist5 = Vector3.Distance(walk5Target.position, transform.position);
-            if (dist5 < 0.01f) 
-			{
-                agent.Stop();
-                anim.SetBool("Position5", true);
-                anim.SetBool("Position1", false);
-                anim.SetBool("Position2", false);
-                anim.SetBool("Position3", false);
-                anim.SetBool("Position4", false);
+        if (walk5)
+        {
+            if (part1)
+            {
+                agent.SetDestination(walk5Target.position);
+                agent.Resume();
+                dist = Vector3.Distance(walk5Target.position, transform.position);
+                if (dist < 0.01f)
+                {
+                    part1 = false;
+                }
             }
-		}
+            else
+            {
+                dist = Vector3.Distance(walk6Target.position, transform.position);
+                agent.SetDestination(walk6Target.position);
+                if (dist < 0.2f)
+                {
+                    agent.Stop();
+                    anim.SetBool("Position5", true);
+                    anim.SetBool("Position1", false);
+                    anim.SetBool("Position2", false);
+                    anim.SetBool("Position3", false);
+                    anim.SetBool("Position4", false);
+                }
+            } 
+        }
 	}
 
 	IEnumerator stopEarthquake() 

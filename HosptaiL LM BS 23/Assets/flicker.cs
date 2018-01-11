@@ -7,6 +7,8 @@ public class Flicker : MonoBehaviour {
     public float maxSpeed;
     public Light lighting;
     private MeshRenderer mesh;
+    private bool onoff;
+    public bool circleLight;
      
     private Color defaultAl;
     private Color defaultEm;
@@ -20,16 +22,28 @@ public class Flicker : MonoBehaviour {
 
     public void turnOn()
     {
-        lighting.enabled = true;
+        try { lighting.enabled = true; } catch { }
+        onoff = true;
         mesh.materials[0].SetColor("_Color", defaultAl);
         mesh.materials[0].SetColor("_EmissionColor", defaultEm);
+        if (circleLight)
+        {
+            mesh.materials[1].SetColor("_Color", defaultAl);
+            mesh.materials[1].SetColor("_EmissionColor", defaultEm);
+        }
     }
 
     public void turnOff()
     {
-        lighting.enabled = false;
+        try { lighting.enabled = false; } catch { }
+        onoff = false;
         mesh.materials[0].SetColor("_Color", Color.black);
         mesh.materials[0].SetColor("_EmissionColor", Color.black);
+        if (circleLight)
+        {
+            mesh.materials[1].SetColor("_Color", Color.black);
+            mesh.materials[1].SetColor("_EmissionColor", Color.black);
+        }
     }
 
     public void Startflicker()
@@ -47,7 +61,7 @@ public class Flicker : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSpeed, maxSpeed));
-            if (lighting.enabled)
+            if (onoff)
             {
                 turnOff();
             }

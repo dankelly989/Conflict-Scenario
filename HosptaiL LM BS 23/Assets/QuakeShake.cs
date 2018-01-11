@@ -5,7 +5,7 @@ public class QuakeShake : MonoBehaviour
 {
 
     public Transform camTransform;
-    public float shakeDuration = 5f;
+    public float shakeDuration = 3f;
     public float shakeAmount = 0.7f;
     public float decreaseFactor = 1.0f;
     public bool active = false;
@@ -20,6 +20,7 @@ public class QuakeShake : MonoBehaviour
     public void quake()
     {
         originalPos = camTransform.localPosition;
+        originalPos.y = 2.655005f;
         active = true;
     }
 
@@ -33,7 +34,7 @@ public class QuakeShake : MonoBehaviour
         }
         else
         {
-            shakeDuration = 5f;
+            shakeDuration = 3f;
             active = false;
         }
     }

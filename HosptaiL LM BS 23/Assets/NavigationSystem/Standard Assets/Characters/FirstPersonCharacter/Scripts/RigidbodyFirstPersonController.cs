@@ -91,7 +91,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         static float t = 0.0f;
 
-        private bool crouch = false;
+        public bool crouch = false;
         private bool standUp = false;
         private bool animation = false;
         private bool isCrouch = false;

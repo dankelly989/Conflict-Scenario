@@ -132,7 +132,7 @@ public class MouseLook : MonoBehaviour
         }
 
         Microphone.End(null); //Stop the audio recording  
-        SavWav.Save(recordFilename, goAudioSource.clip);
+        //SavWav.Save(recordFilename, goAudioSource.clip);
     }
 
 

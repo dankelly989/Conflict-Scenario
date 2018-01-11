@@ -106,7 +106,7 @@ namespace MH
 
             if (null != sm_instance)
             {
-                throw new InvalidOperationException("Instance already exists: " + typeof(T).ToString());
+                //throw new InvalidOperationException("Instance already exists: " + typeof(T).ToString());
             }
 
             sm_instance = this as T;
