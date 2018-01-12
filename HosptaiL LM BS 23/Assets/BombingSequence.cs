@@ -68,6 +68,7 @@ public class BombingSequence : MonoBehaviour
         //screen shake
         controller.walkPermission = false;
         quake.quake();
+        RenderSettings.ambientLight = new Color(0.0627451f, 0.0627451f, 0.0627451f, 1);
         doctor.SetTrigger("Bomb");
 
         //lights go off
