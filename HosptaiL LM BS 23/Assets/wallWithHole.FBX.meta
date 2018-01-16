@@ -13,10 +13,13 @@ ModelImporter:
     400004: //RootNode
     2300000: Box001
     2300002: Cylinder001
+    2300004: //RootNode
     3300000: Box001
     3300002: Cylinder001
+    3300004: //RootNode
     4300000: Box001
     4300002: Cylinder001
+    4300004: pCube1
     9500000: //RootNode
   materials:
     importMaterials: 1
