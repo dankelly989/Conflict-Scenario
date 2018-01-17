@@ -111,7 +111,7 @@ public class DoctorController2 : MonoBehaviour
 			agent.SetDestination(walk1Target.position);
             agent.Resume();
             dist = Vector3.Distance (walk1Target.position, transform.position);
-			if (dist < 0.01f) 
+			if (dist < 0.05f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position1",true);
@@ -125,7 +125,7 @@ public class DoctorController2 : MonoBehaviour
             agent.SetDestination(walk2Target.position);
             agent.Resume();
             dist = Vector3.Distance (walk2Target.position, transform.position);
-			if (dist < 0.01) 
+			if (dist < 0.05f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position2", true);
@@ -139,7 +139,7 @@ public class DoctorController2 : MonoBehaviour
             agent.SetDestination(walk3Target.position);
             agent.Resume();
             dist = Vector3.Distance (walk3Target.position, transform.position);
-			if (dist < 0.01f) 
+			if (dist < 0.05f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position3", true);
@@ -153,7 +153,7 @@ public class DoctorController2 : MonoBehaviour
 			agent.SetDestination(walk4Target.position);
             agent.Resume();
             dist = Vector3.Distance (walk4Target.position, transform.position);
-			if (dist < 0.01f) 
+			if (dist < 0.05f) 
 			{
                 agent.Stop();
                 anim.SetBool("Position4", true);
@@ -169,7 +169,7 @@ public class DoctorController2 : MonoBehaviour
                 agent.SetDestination(walk5Target.position);
                 agent.Resume();
                 dist = Vector3.Distance(walk5Target.position, transform.position);
-                if (dist < 0.01f)
+                if (dist < 0.05f)
                 {
                     part1 = false;
                 }
@@ -178,7 +178,7 @@ public class DoctorController2 : MonoBehaviour
             {
                 dist = Vector3.Distance(walk6Target.position, transform.position);
                 agent.SetDestination(walk6Target.position);
-                if (dist < 0.2f)
+                if (dist < 0.5f)
                 {
                     agent.Stop();
                     anim.SetBool("Position5", true);

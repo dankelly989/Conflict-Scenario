@@ -100,6 +100,8 @@ public class BombingSequence : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
+        RenderSettings.ambientLight = new Color(0.1254902f, 0.1254902f, 0.1254902f, 1);
+
         //Lights flicker
         lights[0].Startflicker();
         lights[11].Startflicker();
