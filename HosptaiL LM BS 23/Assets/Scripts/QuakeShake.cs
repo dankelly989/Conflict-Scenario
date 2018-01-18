@@ -20,7 +20,7 @@ public class QuakeShake : MonoBehaviour
     public void quake()
     {
         originalPos = camTransform.localPosition;
-        originalPos.y = 2.655005f;
+        originalPos.y = -1.74893f;
         active = true;
     }
 
