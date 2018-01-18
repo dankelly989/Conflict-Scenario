@@ -12,7 +12,9 @@ public class BombingSequence : MonoBehaviour
     SingleDoorOpen ward;
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
+    BoxCollider exitStopper3;
     SingleDoorOpen office;
+    DoubleDoorOpen hall;
     QuakeShake quake;
     RigidbodyFirstPersonController controller;
     public List<Flicker> lights;
@@ -28,8 +30,10 @@ public class BombingSequence : MonoBehaviour
         yemenDocotrText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
-        exitStopper1 = GameObject.Find("exitstopper (1)").GetComponent<BoxCollider>();
-        exitStopper2 = GameObject.Find("exitstopper").GetComponent<BoxCollider>();
+        hall = GameObject.Find("DoubleDoor").GetComponent<DoubleDoorOpen>();
+        exitStopper1 = GameObject.Find("exitstopper1").GetComponent<BoxCollider>();
+        exitStopper2 = GameObject.Find("exitstopper2").GetComponent<BoxCollider>();
+        exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();
         quake = GameObject.Find("PlayerTrigger").GetComponent<QuakeShake>();
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
     }
@@ -97,6 +101,8 @@ public class BombingSequence : MonoBehaviour
         exitStopper1.enabled = false;
         exitStopper2.enabled = false;
         ward.active = true;
+        exitStopper3.enabled = false;
+        hall.active = true;
 
         yield return new WaitForSeconds(1);
 

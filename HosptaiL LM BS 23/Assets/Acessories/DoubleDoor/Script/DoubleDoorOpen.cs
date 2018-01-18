@@ -4,27 +4,33 @@ using UnityEngine;
 
 public class DoubleDoorOpen : MonoBehaviour
 {
-	private Animator anim;
+    public bool active = true;
+    private Animator anim;
+    public bool keepopen = false;
 
-	void Start ()
+    void Start ()
 	{
 		anim = GetComponent <Animator> ();
 	}
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Player")
-		{
-			anim.SetBool ("IsOpen", true);
-		}
+        if (other.tag == "Player" && active || other.tag == "Doctor" || other.tag == "Visitor")
+        {
+            anim.SetBool("IsOpen", true);
+            if (!keepopen)
+            {
+                GetComponent<AudioSource>().Play();
+            }
+        }
 	}
 
 	void OnTriggerExit (Collider other)
 	{
-		if (other.tag == "Player")
-		{
-			anim.SetBool ("IsOpen", false);
-		}
-	}
+        if (other.tag == "Player" && active || other.tag == "Doctor" || other.tag == "Visitor")
+        {
+            anim.SetBool("IsOpen", keepopen);
+        }
+    }
 
 }
