@@ -14,7 +14,7 @@ public class ReceptionControl : MonoBehaviour {
         textbox = GameObject.Find("WorkerTextBox").GetComponent<Canvas>();
         textbox.enabled = false;
         workerText = GameObject.Find("WorkerText").GetComponent<Text>();
-        workerText.text = "EEEEEEKKKKKKKKSSSSSS This is a cluster bomb. Jinkies you should make it so people know to stay away.";
+        workerText.text = "Quasimodo:\nEEEEEEKKKKKKKKSSSSSS This is a cluster bomb. Jinkies you should make it so people know to stay away.";
 
         foreach (Flicker f in lights)
         {

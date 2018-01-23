@@ -21,14 +21,14 @@ public class doors : MonoBehaviour {
         }
     }
 
-    //void OnTriggerExit(Collider col)
-    //{
-    //    if (doorOpen)
-    //    {
-    //        doorOpen = false;
-    //        DoorControl("Close");
-    //    }
-    //}
+    void OnTriggerExit(Collider col)
+    {
+        if (doorOpen)
+        {
+            doorOpen = false;
+            DoorControl("Close");
+        }
+    }
 
     void DoorControl(string direction)
     {
