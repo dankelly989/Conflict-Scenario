@@ -8,7 +8,7 @@ public class BombingSequence : MonoBehaviour
 {
     Animator doctor;
     Canvas textbox;
-    Text yemenDocotrText;
+    Text yemenDoctorText;
     SingleDoorOpen ward;
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
@@ -27,7 +27,7 @@ public class BombingSequence : MonoBehaviour
         doctor = GameObject.Find("YemenDoctor").GetComponent<Animator>();
         textbox = GameObject.Find("TextBoxCanvas").GetComponent<Canvas>();
         textbox.enabled = false;
-        yemenDocotrText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
+        yemenDoctorText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
         hall = GameObject.Find("DoubleDoor").GetComponent<DoubleDoorOpen>();
@@ -52,7 +52,7 @@ public class BombingSequence : MonoBehaviour
     {
         if (doctor.GetCurrentAnimatorStateInfo(0).IsName("Stand") && !activated)
         {
-            yemenDocotrText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
+            yemenDoctorText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
             textbox.enabled = true;
 
             StartCoroutine(explosion());
