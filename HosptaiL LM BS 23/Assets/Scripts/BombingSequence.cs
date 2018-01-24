@@ -30,7 +30,8 @@ public class BombingSequence : MonoBehaviour
         yemenDoctorText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
-        hall = GameObject.Find("DoubleDoor").GetComponent<DoubleDoorOpen>();
+        //Debug.Log(GameObject.Find("EndOfHallDoor"));
+        hall = GameObject.Find("EndOfHallDoor").GetComponent<DoubleDoorOpen>();
         exitStopper1 = GameObject.Find("exitstopper1").GetComponent<BoxCollider>();
         exitStopper2 = GameObject.Find("exitstopper2").GetComponent<BoxCollider>();
         exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();

@@ -15,7 +15,7 @@ public class DoubleDoorOpen : MonoBehaviour
 
 	void OnTriggerEnter (Collider other)
 	{
-        if (other.tag == "Player" && active || other.tag == "Doctor" || other.tag == "Visitor")
+        if ((other.tag == "Player" || other.tag == "Doctor" || other.tag == "Visitor") && active)
         {
             anim.SetBool("IsOpen", true);
             if (!keepopen)
@@ -27,7 +27,7 @@ public class DoubleDoorOpen : MonoBehaviour
 
 	void OnTriggerExit (Collider other)
 	{
-        if (other.tag == "Player" && active || other.tag == "Doctor" || other.tag == "Visitor")
+        if ((other.tag == "Player" || other.tag == "Doctor" || other.tag == "Visitor") && active)
         {
             anim.SetBool("IsOpen", keepopen);
         }
