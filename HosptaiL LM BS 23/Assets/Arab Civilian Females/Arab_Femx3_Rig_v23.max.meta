@@ -1,0 +1,534 @@
+fileFormatVersion: 2
+guid: 60cb45ed28d90874ba457fa55150deff
+timeCreated: 1516938453
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arab_Fem_C_01
+    100002: //RootNode
+    100004: ArabFem-A_01
+    100006: ArabFem-B_01
+    100008: Bip_Fem-A_
+    100010: Bip_Fem-A_ Footsteps
+    100012: Bip_Fem-A_ Head
+    100014: Bip_Fem-A_ HeadNub
+    100016: Bip_Fem-A_ L Calf
+    100018: Bip_Fem-A_ L Clavicle
+    100020: Bip_Fem-A_ L Finger0
+    100022: Bip_Fem-A_ L Finger01
+    100024: Bip_Fem-A_ L Finger02
+    100026: Bip_Fem-A_ L Finger0Nub
+    100028: Bip_Fem-A_ L Finger1
+    100030: Bip_Fem-A_ L Finger11
+    100032: Bip_Fem-A_ L Finger12
+    100034: Bip_Fem-A_ L Finger1Nub
+    100036: Bip_Fem-A_ L Finger2
+    100038: Bip_Fem-A_ L Finger21
+    100040: Bip_Fem-A_ L Finger22
+    100042: Bip_Fem-A_ L Finger2Nub
+    100044: Bip_Fem-A_ L Finger3
+    100046: Bip_Fem-A_ L Finger31
+    100048: Bip_Fem-A_ L Finger32
+    100050: Bip_Fem-A_ L Finger3Nub
+    100052: Bip_Fem-A_ L Finger4
+    100054: Bip_Fem-A_ L Finger41
+    100056: Bip_Fem-A_ L Finger42
+    100058: Bip_Fem-A_ L Finger4Nub
+    100060: Bip_Fem-A_ L Foot
+    100062: Bip_Fem-A_ L Forearm
+    100064: Bip_Fem-A_ L Hand
+    100066: Bip_Fem-A_ L Thigh
+    100068: Bip_Fem-A_ L Toe0
+    100070: Bip_Fem-A_ L Toe0Nub
+    100072: Bip_Fem-A_ L UpperArm
+    100074: Bip_Fem-A_ Neck
+    100076: Bip_Fem-A_ Pelvis
+    100078: Bip_Fem-A_ R Calf
+    100080: Bip_Fem-A_ R Clavicle
+    100082: Bip_Fem-A_ R Finger0
+    100084: Bip_Fem-A_ R Finger01
+    100086: Bip_Fem-A_ R Finger02
+    100088: Bip_Fem-A_ R Finger0Nub
+    100090: Bip_Fem-A_ R Finger1
+    100092: Bip_Fem-A_ R Finger11
+    100094: Bip_Fem-A_ R Finger12
+    100096: Bip_Fem-A_ R Finger1Nub
+    100098: Bip_Fem-A_ R Finger2
+    100100: Bip_Fem-A_ R Finger21
+    100102: Bip_Fem-A_ R Finger22
+    100104: Bip_Fem-A_ R Finger2Nub
+    100106: Bip_Fem-A_ R Finger3
+    100108: Bip_Fem-A_ R Finger31
+    100110: Bip_Fem-A_ R Finger32
+    100112: Bip_Fem-A_ R Finger3Nub
+    100114: Bip_Fem-A_ R Finger4
+    100116: Bip_Fem-A_ R Finger41
+    100118: Bip_Fem-A_ R Finger42
+    100120: Bip_Fem-A_ R Finger4Nub
+    100122: Bip_Fem-A_ R Foot
+    100124: Bip_Fem-A_ R Forearm
+    100126: Bip_Fem-A_ R Hand
+    100128: Bip_Fem-A_ R Thigh
+    100130: Bip_Fem-A_ R Toe0
+    100132: Bip_Fem-A_ R Toe0Nub
+    100134: Bip_Fem-A_ R UpperArm
+    100136: Bip_Fem-A_ Spine
+    100138: Bip_Fem-A_ Spine1
+    100140: Bip_Fem-A_ Spine2
+    100142: Bip_Fem-A_ Spine3
+    100144: Bip_Fem-B_
+    100146: Bip_Fem-B_ Footsteps
+    100148: Bip_Fem-B_ Head
+    100150: Bip_Fem-B_ HeadNub
+    100152: Bip_Fem-B_ L Calf
+    100154: Bip_Fem-B_ L Clavicle
+    100156: Bip_Fem-B_ L Finger0
+    100158: Bip_Fem-B_ L Finger01
+    100160: Bip_Fem-B_ L Finger02
+    100162: Bip_Fem-B_ L Finger0Nub
+    100164: Bip_Fem-B_ L Finger1
+    100166: Bip_Fem-B_ L Finger11
+    100168: Bip_Fem-B_ L Finger12
+    100170: Bip_Fem-B_ L Finger1Nub
+    100172: Bip_Fem-B_ L Finger2
+    100174: Bip_Fem-B_ L Finger21
+    100176: Bip_Fem-B_ L Finger22
+    100178: Bip_Fem-B_ L Finger2Nub
+    100180: Bip_Fem-B_ L Finger3
+    100182: Bip_Fem-B_ L Finger31
+    100184: Bip_Fem-B_ L Finger32
+    100186: Bip_Fem-B_ L Finger3Nub
+    100188: Bip_Fem-B_ L Finger4
+    100190: Bip_Fem-B_ L Finger41
+    100192: Bip_Fem-B_ L Finger42
+    100194: Bip_Fem-B_ L Finger4Nub
+    100196: Bip_Fem-B_ L Foot
+    100198: Bip_Fem-B_ L Forearm
+    100200: Bip_Fem-B_ L Hand
+    100202: Bip_Fem-B_ L Thigh
+    100204: Bip_Fem-B_ L Toe0
+    100206: Bip_Fem-B_ L Toe0Nub
+    100208: Bip_Fem-B_ L UpperArm
+    100210: Bip_Fem-B_ Neck
+    100212: Bip_Fem-B_ Pelvis
+    100214: Bip_Fem-B_ R Calf
+    100216: Bip_Fem-B_ R Clavicle
+    100218: Bip_Fem-B_ R Finger0
+    100220: Bip_Fem-B_ R Finger01
+    100222: Bip_Fem-B_ R Finger02
+    100224: Bip_Fem-B_ R Finger0Nub
+    100226: Bip_Fem-B_ R Finger1
+    100228: Bip_Fem-B_ R Finger11
+    100230: Bip_Fem-B_ R Finger12
+    100232: Bip_Fem-B_ R Finger1Nub
+    100234: Bip_Fem-B_ R Finger2
+    100236: Bip_Fem-B_ R Finger21
+    100238: Bip_Fem-B_ R Finger22
+    100240: Bip_Fem-B_ R Finger2Nub
+    100242: Bip_Fem-B_ R Finger3
+    100244: Bip_Fem-B_ R Finger31
+    100246: Bip_Fem-B_ R Finger32
+    100248: Bip_Fem-B_ R Finger3Nub
+    100250: Bip_Fem-B_ R Finger4
+    100252: Bip_Fem-B_ R Finger41
+    100254: Bip_Fem-B_ R Finger42
+    100256: Bip_Fem-B_ R Finger4Nub
+    100258: Bip_Fem-B_ R Foot
+    100260: Bip_Fem-B_ R Forearm
+    100262: Bip_Fem-B_ R Hand
+    100264: Bip_Fem-B_ R Thigh
+    100266: Bip_Fem-B_ R Toe0
+    100268: Bip_Fem-B_ R Toe0Nub
+    100270: Bip_Fem-B_ R UpperArm
+    100272: Bip_Fem-B_ Spine
+    100274: Bip_Fem-B_ Spine1
+    100276: Bip_Fem-B_ Spine2
+    100278: Bip_Fem-B_ Spine3
+    100280: Bip_FemC_
+    100282: Bip_FemC_ Footsteps
+    100284: Bip_FemC_ Head
+    100286: Bip_FemC_ HeadNub
+    100288: Bip_FemC_ L Calf
+    100290: Bip_FemC_ L Clavicle
+    100292: Bip_FemC_ L Finger0
+    100294: Bip_FemC_ L Finger01
+    100296: Bip_FemC_ L Finger02
+    100298: Bip_FemC_ L Finger0Nub
+    100300: Bip_FemC_ L Finger1
+    100302: Bip_FemC_ L Finger11
+    100304: Bip_FemC_ L Finger12
+    100306: Bip_FemC_ L Finger1Nub
+    100308: Bip_FemC_ L Finger2
+    100310: Bip_FemC_ L Finger21
+    100312: Bip_FemC_ L Finger22
+    100314: Bip_FemC_ L Finger2Nub
+    100316: Bip_FemC_ L Finger3
+    100318: Bip_FemC_ L Finger31
+    100320: Bip_FemC_ L Finger32
+    100322: Bip_FemC_ L Finger3Nub
+    100324: Bip_FemC_ L Finger4
+    100326: Bip_FemC_ L Finger41
+    100328: Bip_FemC_ L Finger42
+    100330: Bip_FemC_ L Finger4Nub
+    100332: Bip_FemC_ L Foot
+    100334: Bip_FemC_ L Forearm
+    100336: Bip_FemC_ L Hand
+    100338: Bip_FemC_ L Thigh
+    100340: Bip_FemC_ L Toe0
+    100342: Bip_FemC_ L Toe0Nub
+    100344: Bip_FemC_ L UpperArm
+    100346: Bip_FemC_ Neck
+    100348: Bip_FemC_ Pelvis
+    100350: Bip_FemC_ R Calf
+    100352: Bip_FemC_ R Clavicle
+    100354: Bip_FemC_ R Finger0
+    100356: Bip_FemC_ R Finger01
+    100358: Bip_FemC_ R Finger02
+    100360: Bip_FemC_ R Finger0Nub
+    100362: Bip_FemC_ R Finger1
+    100364: Bip_FemC_ R Finger11
+    100366: Bip_FemC_ R Finger12
+    100368: Bip_FemC_ R Finger1Nub
+    100370: Bip_FemC_ R Finger2
+    100372: Bip_FemC_ R Finger21
+    100374: Bip_FemC_ R Finger22
+    100376: Bip_FemC_ R Finger2Nub
+    100378: Bip_FemC_ R Finger3
+    100380: Bip_FemC_ R Finger31
+    100382: Bip_FemC_ R Finger32
+    100384: Bip_FemC_ R Finger3Nub
+    100386: Bip_FemC_ R Finger4
+    100388: Bip_FemC_ R Finger41
+    100390: Bip_FemC_ R Finger42
+    100392: Bip_FemC_ R Finger4Nub
+    100394: Bip_FemC_ R Foot
+    100396: Bip_FemC_ R Forearm
+    100398: Bip_FemC_ R Hand
+    100400: Bip_FemC_ R Thigh
+    100402: Bip_FemC_ R Toe0
+    100404: Bip_FemC_ R Toe0Nub
+    100406: Bip_FemC_ R UpperArm
+    100408: Bip_FemC_ Spine
+    100410: Bip_FemC_ Spine1
+    100412: Bip_FemC_ Spine2
+    100414: Bip_FemC_ Spine3
+    100416: Burka_Phys-A_L_01
+    100418: Burka_Phys-A_R_01
+    100420: Burka_Phys-B_L_01
+    100422: Burka_Phys-B_R_01
+    100424: Dummy_ArFem_A
+    100426: Dummy_ArFem_B_01
+    100428: Dummy_ArFem_C
+    100430: Head_Fem_Scarf_01
+    100432: Head_Fem_Veil_01
+    400000: Arab_Fem_C_01
+    400002: //RootNode
+    400004: ArabFem-A_01
+    400006: ArabFem-B_01
+    400008: Bip_Fem-A_
+    400010: Bip_Fem-A_ Footsteps
+    400012: Bip_Fem-A_ Head
+    400014: Bip_Fem-A_ HeadNub
+    400016: Bip_Fem-A_ L Calf
+    400018: Bip_Fem-A_ L Clavicle
+    400020: Bip_Fem-A_ L Finger0
+    400022: Bip_Fem-A_ L Finger01
+    400024: Bip_Fem-A_ L Finger02
+    400026: Bip_Fem-A_ L Finger0Nub
+    400028: Bip_Fem-A_ L Finger1
+    400030: Bip_Fem-A_ L Finger11
+    400032: Bip_Fem-A_ L Finger12
+    400034: Bip_Fem-A_ L Finger1Nub
+    400036: Bip_Fem-A_ L Finger2
+    400038: Bip_Fem-A_ L Finger21
+    400040: Bip_Fem-A_ L Finger22
+    400042: Bip_Fem-A_ L Finger2Nub
+    400044: Bip_Fem-A_ L Finger3
+    400046: Bip_Fem-A_ L Finger31
+    400048: Bip_Fem-A_ L Finger32
+    400050: Bip_Fem-A_ L Finger3Nub
+    400052: Bip_Fem-A_ L Finger4
+    400054: Bip_Fem-A_ L Finger41
+    400056: Bip_Fem-A_ L Finger42
+    400058: Bip_Fem-A_ L Finger4Nub
+    400060: Bip_Fem-A_ L Foot
+    400062: Bip_Fem-A_ L Forearm
+    400064: Bip_Fem-A_ L Hand
+    400066: Bip_Fem-A_ L Thigh
+    400068: Bip_Fem-A_ L Toe0
+    400070: Bip_Fem-A_ L Toe0Nub
+    400072: Bip_Fem-A_ L UpperArm
+    400074: Bip_Fem-A_ Neck
+    400076: Bip_Fem-A_ Pelvis
+    400078: Bip_Fem-A_ R Calf
+    400080: Bip_Fem-A_ R Clavicle
+    400082: Bip_Fem-A_ R Finger0
+    400084: Bip_Fem-A_ R Finger01
+    400086: Bip_Fem-A_ R Finger02
+    400088: Bip_Fem-A_ R Finger0Nub
+    400090: Bip_Fem-A_ R Finger1
+    400092: Bip_Fem-A_ R Finger11
+    400094: Bip_Fem-A_ R Finger12
+    400096: Bip_Fem-A_ R Finger1Nub
+    400098: Bip_Fem-A_ R Finger2
+    400100: Bip_Fem-A_ R Finger21
+    400102: Bip_Fem-A_ R Finger22
+    400104: Bip_Fem-A_ R Finger2Nub
+    400106: Bip_Fem-A_ R Finger3
+    400108: Bip_Fem-A_ R Finger31
+    400110: Bip_Fem-A_ R Finger32
+    400112: Bip_Fem-A_ R Finger3Nub
+    400114: Bip_Fem-A_ R Finger4
+    400116: Bip_Fem-A_ R Finger41
+    400118: Bip_Fem-A_ R Finger42
+    400120: Bip_Fem-A_ R Finger4Nub
+    400122: Bip_Fem-A_ R Foot
+    400124: Bip_Fem-A_ R Forearm
+    400126: Bip_Fem-A_ R Hand
+    400128: Bip_Fem-A_ R Thigh
+    400130: Bip_Fem-A_ R Toe0
+    400132: Bip_Fem-A_ R Toe0Nub
+    400134: Bip_Fem-A_ R UpperArm
+    400136: Bip_Fem-A_ Spine
+    400138: Bip_Fem-A_ Spine1
+    400140: Bip_Fem-A_ Spine2
+    400142: Bip_Fem-A_ Spine3
+    400144: Bip_Fem-B_
+    400146: Bip_Fem-B_ Footsteps
+    400148: Bip_Fem-B_ Head
+    400150: Bip_Fem-B_ HeadNub
+    400152: Bip_Fem-B_ L Calf
+    400154: Bip_Fem-B_ L Clavicle
+    400156: Bip_Fem-B_ L Finger0
+    400158: Bip_Fem-B_ L Finger01
+    400160: Bip_Fem-B_ L Finger02
+    400162: Bip_Fem-B_ L Finger0Nub
+    400164: Bip_Fem-B_ L Finger1
+    400166: Bip_Fem-B_ L Finger11
+    400168: Bip_Fem-B_ L Finger12
+    400170: Bip_Fem-B_ L Finger1Nub
+    400172: Bip_Fem-B_ L Finger2
+    400174: Bip_Fem-B_ L Finger21
+    400176: Bip_Fem-B_ L Finger22
+    400178: Bip_Fem-B_ L Finger2Nub
+    400180: Bip_Fem-B_ L Finger3
+    400182: Bip_Fem-B_ L Finger31
+    400184: Bip_Fem-B_ L Finger32
+    400186: Bip_Fem-B_ L Finger3Nub
+    400188: Bip_Fem-B_ L Finger4
+    400190: Bip_Fem-B_ L Finger41
+    400192: Bip_Fem-B_ L Finger42
+    400194: Bip_Fem-B_ L Finger4Nub
+    400196: Bip_Fem-B_ L Foot
+    400198: Bip_Fem-B_ L Forearm
+    400200: Bip_Fem-B_ L Hand
+    400202: Bip_Fem-B_ L Thigh
+    400204: Bip_Fem-B_ L Toe0
+    400206: Bip_Fem-B_ L Toe0Nub
+    400208: Bip_Fem-B_ L UpperArm
+    400210: Bip_Fem-B_ Neck
+    400212: Bip_Fem-B_ Pelvis
+    400214: Bip_Fem-B_ R Calf
+    400216: Bip_Fem-B_ R Clavicle
+    400218: Bip_Fem-B_ R Finger0
+    400220: Bip_Fem-B_ R Finger01
+    400222: Bip_Fem-B_ R Finger02
+    400224: Bip_Fem-B_ R Finger0Nub
+    400226: Bip_Fem-B_ R Finger1
+    400228: Bip_Fem-B_ R Finger11
+    400230: Bip_Fem-B_ R Finger12
+    400232: Bip_Fem-B_ R Finger1Nub
+    400234: Bip_Fem-B_ R Finger2
+    400236: Bip_Fem-B_ R Finger21
+    400238: Bip_Fem-B_ R Finger22
+    400240: Bip_Fem-B_ R Finger2Nub
+    400242: Bip_Fem-B_ R Finger3
+    400244: Bip_Fem-B_ R Finger31
+    400246: Bip_Fem-B_ R Finger32
+    400248: Bip_Fem-B_ R Finger3Nub
+    400250: Bip_Fem-B_ R Finger4
+    400252: Bip_Fem-B_ R Finger41
+    400254: Bip_Fem-B_ R Finger42
+    400256: Bip_Fem-B_ R Finger4Nub
+    400258: Bip_Fem-B_ R Foot
+    400260: Bip_Fem-B_ R Forearm
+    400262: Bip_Fem-B_ R Hand
+    400264: Bip_Fem-B_ R Thigh
+    400266: Bip_Fem-B_ R Toe0
+    400268: Bip_Fem-B_ R Toe0Nub
+    400270: Bip_Fem-B_ R UpperArm
+    400272: Bip_Fem-B_ Spine
+    400274: Bip_Fem-B_ Spine1
+    400276: Bip_Fem-B_ Spine2
+    400278: Bip_Fem-B_ Spine3
+    400280: Bip_FemC_
+    400282: Bip_FemC_ Footsteps
+    400284: Bip_FemC_ Head
+    400286: Bip_FemC_ HeadNub
+    400288: Bip_FemC_ L Calf
+    400290: Bip_FemC_ L Clavicle
+    400292: Bip_FemC_ L Finger0
+    400294: Bip_FemC_ L Finger01
+    400296: Bip_FemC_ L Finger02
+    400298: Bip_FemC_ L Finger0Nub
+    400300: Bip_FemC_ L Finger1
+    400302: Bip_FemC_ L Finger11
+    400304: Bip_FemC_ L Finger12
+    400306: Bip_FemC_ L Finger1Nub
+    400308: Bip_FemC_ L Finger2
+    400310: Bip_FemC_ L Finger21
+    400312: Bip_FemC_ L Finger22
+    400314: Bip_FemC_ L Finger2Nub
+    400316: Bip_FemC_ L Finger3
+    400318: Bip_FemC_ L Finger31
+    400320: Bip_FemC_ L Finger32
+    400322: Bip_FemC_ L Finger3Nub
+    400324: Bip_FemC_ L Finger4
+    400326: Bip_FemC_ L Finger41
+    400328: Bip_FemC_ L Finger42
+    400330: Bip_FemC_ L Finger4Nub
+    400332: Bip_FemC_ L Foot
+    400334: Bip_FemC_ L Forearm
+    400336: Bip_FemC_ L Hand
+    400338: Bip_FemC_ L Thigh
+    400340: Bip_FemC_ L Toe0
+    400342: Bip_FemC_ L Toe0Nub
+    400344: Bip_FemC_ L UpperArm
+    400346: Bip_FemC_ Neck
+    400348: Bip_FemC_ Pelvis
+    400350: Bip_FemC_ R Calf
+    400352: Bip_FemC_ R Clavicle
+    400354: Bip_FemC_ R Finger0
+    400356: Bip_FemC_ R Finger01
+    400358: Bip_FemC_ R Finger02
+    400360: Bip_FemC_ R Finger0Nub
+    400362: Bip_FemC_ R Finger1
+    400364: Bip_FemC_ R Finger11
+    400366: Bip_FemC_ R Finger12
+    400368: Bip_FemC_ R Finger1Nub
+    400370: Bip_FemC_ R Finger2
+    400372: Bip_FemC_ R Finger21
+    400374: Bip_FemC_ R Finger22
+    400376: Bip_FemC_ R Finger2Nub
+    400378: Bip_FemC_ R Finger3
+    400380: Bip_FemC_ R Finger31
+    400382: Bip_FemC_ R Finger32
+    400384: Bip_FemC_ R Finger3Nub
+    400386: Bip_FemC_ R Finger4
+    400388: Bip_FemC_ R Finger41
+    400390: Bip_FemC_ R Finger42
+    400392: Bip_FemC_ R Finger4Nub
+    400394: Bip_FemC_ R Foot
+    400396: Bip_FemC_ R Forearm
+    400398: Bip_FemC_ R Hand
+    400400: Bip_FemC_ R Thigh
+    400402: Bip_FemC_ R Toe0
+    400404: Bip_FemC_ R Toe0Nub
+    400406: Bip_FemC_ R UpperArm
+    400408: Bip_FemC_ Spine
+    400410: Bip_FemC_ Spine1
+    400412: Bip_FemC_ Spine2
+    400414: Bip_FemC_ Spine3
+    400416: Burka_Phys-A_L_01
+    400418: Burka_Phys-A_R_01
+    400420: Burka_Phys-B_L_01
+    400422: Burka_Phys-B_R_01
+    400424: Dummy_ArFem_A
+    400426: Dummy_ArFem_B_01
+    400428: Dummy_ArFem_C
+    400430: Head_Fem_Scarf_01
+    400432: Head_Fem_Veil_01
+    2300000: Burka_Phys-A_L_01
+    2300002: Burka_Phys-A_R_01
+    2300004: Burka_Phys-B_L_01
+    2300006: Burka_Phys-B_R_01
+    2300008: Head_Fem_Scarf_01
+    3300000: Burka_Phys-A_L_01
+    3300002: Burka_Phys-A_R_01
+    3300004: Burka_Phys-B_L_01
+    3300006: Burka_Phys-B_R_01
+    3300008: Head_Fem_Scarf_01
+    4300000: ArabFem-A_01
+    4300002: Head_Fem_Scarf_01
+    4300004: Head_Fem_Veil_01
+    4300006: ArabFem-B_01
+    4300008: Arab_Fem_C_01
+    4300010: Burka_Phys-A_L_01
+    4300012: Burka_Phys-B_L_01
+    4300014: Burka_Phys-A_R_01
+    4300016: Burka_Phys-B_R_01
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Arab_Fem_C_01
+    13700002: ArabFem-A_01
+    13700004: ArabFem-B_01
+    13700006: Head_Fem_Veil_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

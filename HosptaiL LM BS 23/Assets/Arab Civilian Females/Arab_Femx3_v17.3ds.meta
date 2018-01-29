@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 8c3c98e9380f06646ae4e53dcca9a486
+timeCreated: 1516938455
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arab_Fem_A
+    100002: Arab_Fem_B
+    100004: Arab_Fem_C
+    100006: Arab_Femx3
+    100008: //RootNode
+    100010: BurkaArms_
+    100012: DressLon18
+    100014: DressLong_
+    100016: DressLonge
+    100018: Hands_C_02
+    100020: Hands_C_14
+    100022: Head_Fem21
+    100024: Head_Fem_S
+    100026: Head_Fem_V
+    100028: LongArms13
+    100030: LongArms_A
+    100032: Sandal_B_0
+    100034: Sandal_C20
+    100036: Sandal_C_0
+    100038: Trouser_A_
+    100040: Universal2
+    100042: UniversalM
+    100044: ViewCompas
+    400000: Arab_Fem_A
+    400002: Arab_Fem_B
+    400004: Arab_Fem_C
+    400006: Arab_Femx3
+    400008: //RootNode
+    400010: BurkaArms_
+    400012: DressLon18
+    400014: DressLong_
+    400016: DressLonge
+    400018: Hands_C_02
+    400020: Hands_C_14
+    400022: Head_Fem21
+    400024: Head_Fem_S
+    400026: Head_Fem_V
+    400028: LongArms13
+    400030: LongArms_A
+    400032: Sandal_B_0
+    400034: Sandal_C20
+    400036: Sandal_C_0
+    400038: Trouser_A_
+    400040: Universal2
+    400042: UniversalM
+    400044: ViewCompas
+    2300000: BurkaArms_
+    2300002: DressLon18
+    2300004: DressLong_
+    2300006: DressLonge
+    2300008: Hands_C_02
+    2300010: Hands_C_14
+    2300012: Head_Fem21
+    2300014: Head_Fem_S
+    2300016: Head_Fem_V
+    2300018: LongArms13
+    2300020: LongArms_A
+    2300022: Sandal_B_0
+    2300024: Sandal_C20
+    2300026: Sandal_C_0
+    2300028: Trouser_A_
+    3300000: BurkaArms_
+    3300002: DressLon18
+    3300004: DressLong_
+    3300006: DressLonge
+    3300008: Hands_C_02
+    3300010: Hands_C_14
+    3300012: Head_Fem21
+    3300014: Head_Fem_S
+    3300016: Head_Fem_V
+    3300018: LongArms13
+    3300020: LongArms_A
+    3300022: Sandal_B_0
+    3300024: Sandal_C20
+    3300026: Sandal_C_0
+    3300028: Trouser_A_
+    4300000: DressLong_
+    4300002: LongArms_A
+    4300004: Hands_C_02
+    4300006: Trouser_A_
+    4300008: Sandal_B_0
+    4300010: Head_Fem_S
+    4300012: DressLonge
+    4300014: LongArms13
+    4300016: Hands_C_14
+    4300018: Sandal_C_0
+    4300020: Head_Fem_V
+    4300022: DressLon18
+    4300024: BurkaArms_
+    4300026: Sandal_C20
+    4300028: Head_Fem21
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

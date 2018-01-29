@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 9aacf9d004cf5cc429c5c22922bff830
+timeCreated: 1516938456
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arab_Fem_A_01_Arab_Femx3_Hands_C_02
+    100002: Arab_Fem_A_01_Arab_Femx3_Head_Fem_Scarf_A_01
+    100004: Arab_Fem_A_01_Arab_Femx3_LongArms_A_02
+    100006: Arab_Fem_A_01_Arab_Femx3_Sandal_B_01
+    100008: Arab_Fem_A_01_Arab_Femx3_Trouser_A_01
+    100010: Arab_Femx3_Arab_Fem_B_01_Hands_C_02
+    100012: Arab_Femx3_Arab_Fem_B_01_Head_Fem_Veil_A_01
+    100014: Arab_Femx3_Arab_Fem_B_01_LongArms_A_02
+    100016: Arab_Femx3_Arab_Fem_B_01_Sandal_C_01
+    100018: Arab_Femx3_Arab_Fem_C_01_BurkaArms_A_01
+    100020: Arab_Femx3_Arab_Fem_C_01_Head_Fem_Veil_C_01
+    100022: Arab_Femx3_Arab_Fem_C_01_Sandal_C_01
+    100024: Arab_Femx3_DressLonger_B_01_Arab_Fem_B_01
+    100026: Arab_Femx3_DressLonger_B_01_Arab_Fem_C_01
+    100028: //RootNode
+    100030: DressLong_A_01_Arab_Fem_A_01_Arab_Femx3
+    400000: Arab_Fem_A_01_Arab_Femx3_Hands_C_02
+    400002: Arab_Fem_A_01_Arab_Femx3_Head_Fem_Scarf_A_01
+    400004: Arab_Fem_A_01_Arab_Femx3_LongArms_A_02
+    400006: Arab_Fem_A_01_Arab_Femx3_Sandal_B_01
+    400008: Arab_Fem_A_01_Arab_Femx3_Trouser_A_01
+    400010: Arab_Femx3_Arab_Fem_B_01_Hands_C_02
+    400012: Arab_Femx3_Arab_Fem_B_01_Head_Fem_Veil_A_01
+    400014: Arab_Femx3_Arab_Fem_B_01_LongArms_A_02
+    400016: Arab_Femx3_Arab_Fem_B_01_Sandal_C_01
+    400018: Arab_Femx3_Arab_Fem_C_01_BurkaArms_A_01
+    400020: Arab_Femx3_Arab_Fem_C_01_Head_Fem_Veil_C_01
+    400022: Arab_Femx3_Arab_Fem_C_01_Sandal_C_01
+    400024: Arab_Femx3_DressLonger_B_01_Arab_Fem_B_01
+    400026: Arab_Femx3_DressLonger_B_01_Arab_Fem_C_01
+    400028: //RootNode
+    400030: DressLong_A_01_Arab_Fem_A_01_Arab_Femx3
+    2300000: Arab_Fem_A_01_Arab_Femx3_Hands_C_02
+    2300002: Arab_Fem_A_01_Arab_Femx3_Head_Fem_Scarf_A_01
+    2300004: Arab_Fem_A_01_Arab_Femx3_LongArms_A_02
+    2300006: Arab_Fem_A_01_Arab_Femx3_Sandal_B_01
+    2300008: Arab_Fem_A_01_Arab_Femx3_Trouser_A_01
+    2300010: Arab_Femx3_Arab_Fem_B_01_Hands_C_02
+    2300012: Arab_Femx3_Arab_Fem_B_01_Head_Fem_Veil_A_01
+    2300014: Arab_Femx3_Arab_Fem_B_01_LongArms_A_02
+    2300016: Arab_Femx3_Arab_Fem_B_01_Sandal_C_01
+    2300018: Arab_Femx3_Arab_Fem_C_01_BurkaArms_A_01
+    2300020: Arab_Femx3_Arab_Fem_C_01_Head_Fem_Veil_C_01
+    2300022: Arab_Femx3_Arab_Fem_C_01_Sandal_C_01
+    2300024: Arab_Femx3_DressLonger_B_01_Arab_Fem_B_01
+    2300026: Arab_Femx3_DressLonger_B_01_Arab_Fem_C_01
+    2300028: DressLong_A_01_Arab_Fem_A_01_Arab_Femx3
+    3300000: Arab_Fem_A_01_Arab_Femx3_Hands_C_02
+    3300002: Arab_Fem_A_01_Arab_Femx3_Head_Fem_Scarf_A_01
+    3300004: Arab_Fem_A_01_Arab_Femx3_LongArms_A_02
+    3300006: Arab_Fem_A_01_Arab_Femx3_Sandal_B_01
+    3300008: Arab_Fem_A_01_Arab_Femx3_Trouser_A_01
+    3300010: Arab_Femx3_Arab_Fem_B_01_Hands_C_02
+    3300012: Arab_Femx3_Arab_Fem_B_01_Head_Fem_Veil_A_01
+    3300014: Arab_Femx3_Arab_Fem_B_01_LongArms_A_02
+    3300016: Arab_Femx3_Arab_Fem_B_01_Sandal_C_01
+    3300018: Arab_Femx3_Arab_Fem_C_01_BurkaArms_A_01
+    3300020: Arab_Femx3_Arab_Fem_C_01_Head_Fem_Veil_C_01
+    3300022: Arab_Femx3_Arab_Fem_C_01_Sandal_C_01
+    3300024: Arab_Femx3_DressLonger_B_01_Arab_Fem_B_01
+    3300026: Arab_Femx3_DressLonger_B_01_Arab_Fem_C_01
+    3300028: DressLong_A_01_Arab_Fem_A_01_Arab_Femx3
+    4300000: Arab_Fem_A_01_Arab_Femx3_Hands_C_02
+    4300002: Arab_Fem_A_01_Arab_Femx3_Head_Fem_Scarf_A_01
+    4300004: Arab_Fem_A_01_Arab_Femx3_LongArms_A_02
+    4300006: Arab_Fem_A_01_Arab_Femx3_Sandal_B_01
+    4300008: Arab_Fem_A_01_Arab_Femx3_Trouser_A_01
+    4300010: Arab_Femx3_Arab_Fem_B_01_Hands_C_02
+    4300012: Arab_Femx3_Arab_Fem_B_01_Head_Fem_Veil_A_01
+    4300014: Arab_Femx3_Arab_Fem_B_01_LongArms_A_02
+    4300016: Arab_Femx3_Arab_Fem_B_01_Sandal_C_01
+    4300018: Arab_Femx3_Arab_Fem_C_01_BurkaArms_A_01
+    4300020: Arab_Femx3_Arab_Fem_C_01_Head_Fem_Veil_C_01
+    4300022: Arab_Femx3_Arab_Fem_C_01_Sandal_C_01
+    4300024: Arab_Femx3_DressLonger_B_01_Arab_Fem_B_01
+    4300026: Arab_Femx3_DressLonger_B_01_Arab_Fem_C_01
+    4300028: DressLong_A_01_Arab_Fem_A_01_Arab_Femx3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
