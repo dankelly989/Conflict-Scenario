@@ -16,7 +16,7 @@ public class BabyController : MonoBehaviour {
 	void Update () {
         if (Time.time > timeLastgenerated + 5)
         {
-            float r = Random.Range(0, 3);
+            float r = Random.Range(0.5f, 2);
             anim.SetFloat("Speed",r);
 
             timeLastgenerated = Time.time;

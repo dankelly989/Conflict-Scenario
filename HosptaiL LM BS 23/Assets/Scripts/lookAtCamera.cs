@@ -1,15 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class lookAtCamera : MonoBehaviour
 {
     public Transform transform;
-    public Transform cam;
+    Transform controller;
+
+    private void Start()
+    {
+        controller = GameObject.Find("RigidBodyFPSController").GetComponent<Transform>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(cam.transform);
+        transform.LookAt(controller.transform);
     }
 }

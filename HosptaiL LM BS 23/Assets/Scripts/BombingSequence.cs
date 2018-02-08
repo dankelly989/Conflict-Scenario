@@ -13,10 +13,13 @@ public class BombingSequence : MonoBehaviour
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
     BoxCollider exitStopper3;
+    BoxCollider exitStopper4;
     SingleDoorOpen office;
+    SingleDoorOpen stairs;
     DoubleDoorOpen hall;
     QuakeShake quake;
     RigidbodyFirstPersonController controller;
+    public List<Animator> sittingWomen;
     public List<Flicker> lights;
     public List<GameObject> brokenObjects;
     public List<GameObject> newObjects;
@@ -30,11 +33,12 @@ public class BombingSequence : MonoBehaviour
         yemenDoctorText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
-        //Debug.Log(GameObject.Find("EndOfHallDoor"));
+        stairs = GameObject.Find("door L1").GetComponent<SingleDoorOpen>();
         hall = GameObject.Find("EndOfHallDoor").GetComponent<DoubleDoorOpen>();
         exitStopper1 = GameObject.Find("exitstopper1").GetComponent<BoxCollider>();
         exitStopper2 = GameObject.Find("exitstopper2").GetComponent<BoxCollider>();
         exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();
+        exitStopper4 = GameObject.Find("exitstopper4").GetComponent<BoxCollider>();
         quake = GameObject.Find("PlayerTrigger").GetComponent<QuakeShake>();
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
     }
@@ -76,6 +80,11 @@ public class BombingSequence : MonoBehaviour
         RenderSettings.ambientLight = new Color(0.0627451f, 0.0627451f, 0.0627451f, 1);
         doctor.SetTrigger("Bomb");
 
+        foreach (Animator a in sittingWomen)
+        {
+            a.SetTrigger("earthquake");
+        }
+
         //lights go off
         foreach (Flicker f in lights)
         {
@@ -104,6 +113,8 @@ public class BombingSequence : MonoBehaviour
         ward.active = true;
         exitStopper3.enabled = false;
         hall.active = true;
+        exitStopper4.enabled = false;
+        stairs.active = true;
 
         yield return new WaitForSeconds(1);
 

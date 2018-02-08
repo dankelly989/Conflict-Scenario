@@ -282,7 +282,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float SlopeMultiplier()
         {
             float angle = Vector3.Angle(m_GroundContactNormal, Vector3.up);
-            return movementSettings.SlopeCurveModifier.Evaluate(angle);
+            return movementSettings.SlopeCurveModifier.Evaluate(0);
         }
 
 
