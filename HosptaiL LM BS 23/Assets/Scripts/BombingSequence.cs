@@ -8,17 +8,21 @@ public class BombingSequence : MonoBehaviour
 {
     Animator doctor;
     Canvas textbox;
-    Text yemenDoctorText;
+    BoxCollider doctorCollider;
+    Talking doctorTalk;
+
     SingleDoorOpen ward;
+    SingleDoorOpen office;
+    SingleDoorOpen stairs;
+    DoubleDoorOpen hall;
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
     BoxCollider exitStopper3;
     BoxCollider exitStopper4;
-    SingleDoorOpen office;
-    SingleDoorOpen stairs;
-    DoubleDoorOpen hall;
+    
     QuakeShake quake;
     RigidbodyFirstPersonController controller;
+
     public List<Animator> sittingWomen;
     public List<Flicker> lights;
     public List<GameObject> brokenObjects;
@@ -28,9 +32,12 @@ public class BombingSequence : MonoBehaviour
     void Start()
     {
         doctor = GameObject.Find("YemenDoctor").GetComponent<Animator>();
+        doctorCollider = GameObject.Find("YemenDoctor").GetComponent<BoxCollider>();
+        doctorCollider.enabled = false;
+        doctorTalk = GameObject.Find("YemenDoctor").GetComponent<Talking>();
+        doctorTalk.enabled = false;
         textbox = GameObject.Find("TextBoxCanvas").GetComponent<Canvas>();
         textbox.enabled = false;
-        yemenDoctorText = GameObject.Find("YemenDoctorText").GetComponent<Text>();
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
         stairs = GameObject.Find("door L1").GetComponent<SingleDoorOpen>();
@@ -57,8 +64,8 @@ public class BombingSequence : MonoBehaviour
     {
         if (doctor.GetCurrentAnimatorStateInfo(0).IsName("Stand") && !activated)
         {
-            yemenDoctorText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
-            textbox.enabled = true;
+            /*yemenDoctorText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
+            textbox.enabled = true;*/
 
             StartCoroutine(explosion());
             activated = true;
@@ -107,6 +114,10 @@ public class BombingSequence : MonoBehaviour
         }
         controller.walkPermission = true;
 
+        doctor.SetTrigger("Stand");
+        doctorCollider.enabled = true;
+        doctorTalk.enabled = true;
+
         office.active = true;
         exitStopper1.enabled = false;
         exitStopper2.enabled = false;
@@ -124,5 +135,11 @@ public class BombingSequence : MonoBehaviour
         lights[0].Startflicker();
         lights[11].Startflicker();
         lights[12].Startflicker();
+        lights[16].Startflicker();
+        lights[17].Startflicker();
+        lights[18].Startflicker();
+        lights[21].Startflicker();
+        lights[23].Startflicker();
+        lights[24].Startflicker();
     }
 }

@@ -26,13 +26,13 @@ public class PersonController : MonoBehaviour
         agent.SetDestination(currentTarget.position);
         agent.Resume();
         dist = Vector3.Distance(currentTarget.position, transform.position);
-        if (dist < 0.5f && currentIndex < 5)
+        if (dist < 0.5f && currentIndex < 6)
         {
             agent.Stop();
             currentIndex++;
             currentTarget = Targets[currentIndex];
         }
-        else if (currentIndex == 5)
+        else if (currentIndex == 6)
         {
             removeCharacter();
         }

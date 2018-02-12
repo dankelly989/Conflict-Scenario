@@ -10,7 +10,7 @@ public class lookAtCamera : MonoBehaviour
 
     private void Start()
     {
-        controller = GameObject.Find("RigidBodyFPSController").GetComponent<Transform>();
+        controller = GameObject.Find("MainCameraVR").GetComponent<Transform>();
     }
 
     // Update is called once per frame

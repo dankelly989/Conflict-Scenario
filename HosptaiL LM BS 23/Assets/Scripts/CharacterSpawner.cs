@@ -32,7 +32,7 @@ public class CharacterSpawner : MonoBehaviour
 
     protected void Update()
     {
-        if (Time.time > timeLastSpawned + 5)
+        if (Time.time > timeLastSpawned + 1)
         {
             int r = Random.Range(0, 3);
             Vector3 position = new Vector3(-168.162f, -0.423f, -137.912f);
