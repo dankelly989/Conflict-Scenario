@@ -9,9 +9,11 @@ public class ReceptionControl : MonoBehaviour {
     Canvas textbox;
     Text workerText;
     GameObject cones;
-    PickUpCone controller;
+    storeVariables variables;
     bool visited = false;
     public List<string> talking;
+    Image TextCanvas;
+    Text CameraText;
 
     // Use this for initialization
     void Start () {
@@ -20,7 +22,9 @@ public class ReceptionControl : MonoBehaviour {
         workerText = GameObject.Find("WorkerText").GetComponent<Text>();
         cones = GameObject.Find("cones");
         cones.SetActive(false);
-        controller = GameObject.Find("RigidBodyFPSController").GetComponent<PickUpCone>();
+        variables = GameObject.Find("Variables").GetComponent<storeVariables>();
+        TextCanvas = GameObject.Find("CameraBackground").GetComponent<Image>();
+        CameraText = GameObject.Find("CameraText").GetComponent<Text>();
 
         foreach (Flicker f in lights)
         {
@@ -48,7 +52,7 @@ public class ReceptionControl : MonoBehaviour {
             }
         }
 
-        if (controller.cones)
+        if (variables.pickedUpCones)
         {
             if (!cones.active)
             {
@@ -56,6 +60,7 @@ public class ReceptionControl : MonoBehaviour {
                 yield return new WaitForSeconds(7);
                 cones.SetActive(true);
                 visited = false;
+                StartCoroutine(showCameraText());
             }
         }
         else
@@ -71,5 +76,15 @@ public class ReceptionControl : MonoBehaviour {
         {
             textbox.enabled = false;
         }
+    }
+
+    IEnumerator showCameraText()
+    {
+        CameraText.text = "Put down cones";
+        TextCanvas.enabled = true;
+        CameraText.enabled = true;
+        yield return new WaitForSeconds(3);
+        TextCanvas.enabled = false;
+        CameraText.enabled = false;
     }
 }
