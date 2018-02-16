@@ -14,7 +14,6 @@ public class BombingSequence : MonoBehaviour
     SingleDoorOpen ward;
     SingleDoorOpen office;
     SingleDoorOpen stairs;
-    DoubleDoorOpen hall;
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
     BoxCollider exitStopper3;
@@ -42,7 +41,6 @@ public class BombingSequence : MonoBehaviour
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
         stairs = GameObject.Find("door L1").GetComponent<SingleDoorOpen>();
-        hall = GameObject.Find("EndOfHallDoor").GetComponent<DoubleDoorOpen>();
         exitStopper1 = GameObject.Find("exitstopper1").GetComponent<BoxCollider>();
         exitStopper2 = GameObject.Find("exitstopper2").GetComponent<BoxCollider>();
         exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();
@@ -67,9 +65,6 @@ public class BombingSequence : MonoBehaviour
     {
         if (doctor.GetCurrentAnimatorStateInfo(0).IsName("Stand") && !activated)
         {
-            /*yemenDoctorText.text = "This is some example text. Blah blah blah. Something about starving orphans or whatever.\nBOOM EXPLOSION!!!!!\nsjfsfubsdufbsdufsdufbsdui";
-            textbox.enabled = true;*/
-
             StartCoroutine(explosion());
             activated = true;
         }
@@ -78,7 +73,6 @@ public class BombingSequence : MonoBehaviour
     IEnumerator explosion()
     {
         yield return new WaitForSeconds(7);
-        textbox.enabled = false;
 
         //Play sound
         this.GetComponent<AudioSource>().Play();
@@ -126,7 +120,6 @@ public class BombingSequence : MonoBehaviour
         exitStopper2.enabled = false;
         ward.active = true;
         exitStopper3.enabled = false;
-        hall.active = true;
         exitStopper4.enabled = false;
         stairs.active = true;
 

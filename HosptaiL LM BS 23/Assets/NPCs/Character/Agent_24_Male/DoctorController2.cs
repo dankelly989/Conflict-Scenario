@@ -80,32 +80,6 @@ public class DoctorController2 : MonoBehaviour
             ls.Play(ls.defaultClip, ls.defaultDelay);
         }
 
-        /*  if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Stand2"))
-          {			
-              StartCoroutine (checkOutside());
-          }
-
-          if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Walk3")) 
-          {
-              walk3 = true;
-              StartCoroutine(evacSoundActivation());       
-          }
-
-          if (anim.GetCurrentAnimatorStateInfo(0).IsName("Stand3"))
-          {
-              gameObject.GetComponent<HeadLookController>().enabled = true;
-          }
-
-          if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk3"))
-          {
-              gameObject.GetComponent<HeadLookController>().enabled = false;
-          }
-
-          if (anim.GetCurrentAnimatorStateInfo(0).IsName("Stand4"))
-          {
-              gameObject.GetComponent<HeadLookController>().enabled = true;
-          }*/
-
         if (walk1) 
 		{
 			agent.SetDestination(walk1Target.position);

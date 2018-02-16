@@ -11,6 +11,7 @@ public class Generator : MonoBehaviour {
     Text CameraText;
     public List<Flicker> lights;
     GameObject siren;
+    DoubleDoorOpen hall;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class Generator : MonoBehaviour {
         CameraText = GameObject.Find("CameraText").GetComponent<Text>();
         siren = GameObject.Find("Siren");
         siren.GetComponent<AudioSource>().enabled = false;
+        hall = GameObject.Find("EndOfHallDoor").GetComponent<DoubleDoorOpen>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,7 +30,7 @@ public class Generator : MonoBehaviour {
         {
             variables.generatorOn = true;
             handle.transform.rotation = new Quaternion(0.1f,-0.1f,-0.8f,0.6f);
-            this.GetComponentInChildren<AudioSource>().enabled = true; ;
+            this.GetComponentInChildren<AudioSource>().enabled = true;
             StartCoroutine(showText());
             RenderSettings.ambientLight = new Color(0.3647059f, 0.3647059f, 0.3647059f, 1);
             //lights go off
@@ -38,6 +40,7 @@ public class Generator : MonoBehaviour {
                 f.turnOn();
             }
             siren.GetComponent<AudioSource>().enabled = true;
+            hall.active = true;
         }
     }
 
