@@ -23,7 +23,8 @@ public class BombingSequence : MonoBehaviour
     QuakeShake quake;
     RigidbodyFirstPersonController controller;
 
-    public List<Animator> sittingWomen;
+    public GameObject women;
+    public Animator[] sittingWomen;
     public List<Flicker> lights;
     public List<GameObject> brokenObjects;
     public List<GameObject> newObjects;
@@ -48,6 +49,8 @@ public class BombingSequence : MonoBehaviour
         exitStopper4 = GameObject.Find("exitstopper4").GetComponent<BoxCollider>();
         quake = GameObject.Find("PlayerTrigger").GetComponent<QuakeShake>();
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
+        women = GameObject.Find("HallwayWomen");
+        sittingWomen = women.GetComponentsInChildren<Animator>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -140,6 +143,5 @@ public class BombingSequence : MonoBehaviour
         lights[18].Startflicker();
         lights[21].Startflicker();
         lights[23].Startflicker();
-        lights[24].Startflicker();
     }
 }

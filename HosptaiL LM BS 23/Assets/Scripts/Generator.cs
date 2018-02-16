@@ -9,6 +9,8 @@ public class Generator : MonoBehaviour {
     GameObject handle;
     Image TextCanvas;
     Text CameraText;
+    public List<Flicker> lights;
+    GameObject siren;
 
     void Start()
     {
@@ -16,6 +18,8 @@ public class Generator : MonoBehaviour {
         handle = GameObject.Find("handle");
         TextCanvas = GameObject.Find("CameraBackground").GetComponent<Image>();
         CameraText = GameObject.Find("CameraText").GetComponent<Text>();
+        siren = GameObject.Find("Siren");
+        siren.GetComponent<AudioSource>().enabled = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,14 +28,22 @@ public class Generator : MonoBehaviour {
         {
             variables.generatorOn = true;
             handle.transform.rotation = new Quaternion(0.1f,-0.1f,-0.8f,0.6f);
-            GetComponent<AudioSource>().Play();
+            this.GetComponentInChildren<AudioSource>().enabled = true; ;
             StartCoroutine(showText());
+            RenderSettings.ambientLight = new Color(0.3647059f, 0.3647059f, 0.3647059f, 1);
+            //lights go off
+            foreach (Flicker f in lights)
+            {
+                f.Stopflicker();
+                f.turnOn();
+            }
+            siren.GetComponent<AudioSource>().enabled = true;
         }
     }
 
     IEnumerator showText()
     {
-        CameraText.text = "Turned on generator";
+        CameraText.text = "Refueled generator";
         CameraText.enabled = true;
         TextCanvas.enabled = true;
         yield return new WaitForSeconds(3);
