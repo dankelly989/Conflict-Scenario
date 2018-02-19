@@ -33,7 +33,6 @@ public class maintainenceGuyTalking : MonoBehaviour {
     {
         if (!variables.generatorOn)
         {
-            variables.findFuel = true;
             foreach (string s in talking1)
             {
                 workerText.text = s;
@@ -41,8 +40,7 @@ public class maintainenceGuyTalking : MonoBehaviour {
             }
         }
         else
-        {
-            variables.talkedToGuy = true;
+        { 
             foreach (string s in talking2)
             {
                 workerText.text = s;

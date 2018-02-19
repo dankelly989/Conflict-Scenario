@@ -7,7 +7,9 @@ public class Talking : MonoBehaviour {
 
     Canvas textbox;
     Text workerText;
+    storeVariables variables;
     public List<string> talking;
+    public List<string> AfterGeneratortalking;
 
     // Use this for initialization
     void Start()
@@ -15,20 +17,42 @@ public class Talking : MonoBehaviour {
         textbox = this.GetComponentInChildren<Canvas>();
         textbox.enabled = false;
         workerText = textbox.GetComponentInChildren<Text>();
+        variables = GameObject.Find("Variables").GetComponent<storeVariables>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (!variables.generatorOn)
         {
-            textbox.enabled = true;
-            StartCoroutine(showText());
+            if (other.tag == "Player" && talking.Count > 0)
+            {
+                textbox.enabled = true;
+                StartCoroutine(showPreBombText());
+            }
+        }
+        else
+        {
+            if (other.tag == "Player" && AfterGeneratortalking.Count > 0)
+            {
+                textbox.enabled = true;
+                StartCoroutine(showPostBombText());
+            }
+        }
+        
+    }
+
+    IEnumerator showPreBombText()
+    {
+        foreach (string s in talking)
+        {
+            workerText.text = s;
+            yield return new WaitForSeconds(7);
         }
     }
 
-    IEnumerator showText()
+    IEnumerator showPostBombText()
     {
-        foreach (string s in talking)
+        foreach (string s in AfterGeneratortalking)
         {
             workerText.text = s;
             yield return new WaitForSeconds(7);

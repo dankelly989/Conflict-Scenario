@@ -31,7 +31,7 @@ public class TalkingHouthis : MonoBehaviour {
 
     IEnumerator showText()
     {
-        if (!variables.findFuel)
+        if (!variables.enabled)
         {
             foreach (string s in talking1)
             {

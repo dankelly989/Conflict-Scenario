@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class storeVariables : MonoBehaviour {
 
+    public bool hasFuel = false;
     public bool generatorOn = false;
     public bool pickedUpCones = false;
-    public bool hasFuel = false;
-    public bool findFuel = false;
-    public bool talkedToGuy = false;
 
 	// Use this for initialization
 	void Start () {

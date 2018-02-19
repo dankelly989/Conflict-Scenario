@@ -56,8 +56,8 @@ public class ReceptionControl : MonoBehaviour {
         {
             if (!cones.active)
             {
-                workerText.text = "Pass me those cones. I can use them to mark off the area so no one wanders into this bomb and I can get back to work.";
-                yield return new WaitForSeconds(7);
+                workerText.text = "Pass me those cones. I can use them to mark off the area so no one wanders into this bomb. Now we must leave immediately.";
+               yield return new WaitForSeconds(7);
                 cones.SetActive(true);
                 visited = false;
                 StartCoroutine(showCameraText());

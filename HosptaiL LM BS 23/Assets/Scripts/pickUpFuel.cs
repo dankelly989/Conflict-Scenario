@@ -18,7 +18,7 @@ public class pickUpFuel : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && variables.findFuel)
+        if (other.tag == "Player")
         {
             StartCoroutine(showText());
             this.gameObject.GetComponent<MeshRenderer>().enabled = false;

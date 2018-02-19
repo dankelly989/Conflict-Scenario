@@ -8,7 +8,7 @@ public class BombingSequence : MonoBehaviour
 {
     Animator doctor;
     Canvas textbox;
-    BoxCollider doctorCollider;
+    CapsuleCollider doctorCollider;
     Talking doctorTalk;
 
     SingleDoorOpen ward;
@@ -16,7 +16,6 @@ public class BombingSequence : MonoBehaviour
     SingleDoorOpen stairs;
     BoxCollider exitStopper1;
     BoxCollider exitStopper2;
-    BoxCollider exitStopper3;
     BoxCollider exitStopper4;
     
     QuakeShake quake;
@@ -32,7 +31,7 @@ public class BombingSequence : MonoBehaviour
     void Start()
     {
         doctor = GameObject.Find("YemenDoctor").GetComponent<Animator>();
-        doctorCollider = GameObject.Find("YemenDoctor").GetComponent<BoxCollider>();
+        doctorCollider = GameObject.Find("YemenDoctor").GetComponent<CapsuleCollider>();
         doctorCollider.enabled = false;
         doctorTalk = GameObject.Find("YemenDoctor").GetComponent<Talking>();
         doctorTalk.enabled = false;
@@ -43,7 +42,6 @@ public class BombingSequence : MonoBehaviour
         stairs = GameObject.Find("door L1").GetComponent<SingleDoorOpen>();
         exitStopper1 = GameObject.Find("exitstopper1").GetComponent<BoxCollider>();
         exitStopper2 = GameObject.Find("exitstopper2").GetComponent<BoxCollider>();
-        exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();
         exitStopper4 = GameObject.Find("exitstopper4").GetComponent<BoxCollider>();
         quake = GameObject.Find("PlayerTrigger").GetComponent<QuakeShake>();
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
@@ -76,7 +74,6 @@ public class BombingSequence : MonoBehaviour
 
         //Play sound
         this.GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(1);
 
         //screen shake
         controller.walkPermission = false;
@@ -103,7 +100,7 @@ public class BombingSequence : MonoBehaviour
         
         controller.crouch = true;
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(10);
 
         foreach (GameObject g in newObjects)
         {
@@ -119,7 +116,6 @@ public class BombingSequence : MonoBehaviour
         exitStopper1.enabled = false;
         exitStopper2.enabled = false;
         ward.active = true;
-        exitStopper3.enabled = false;
         exitStopper4.enabled = false;
         stairs.active = true;
 
