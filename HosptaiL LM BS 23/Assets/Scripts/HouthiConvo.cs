@@ -5,66 +5,29 @@ using UnityEngine.UI;
 
 public class HouthiConvo : MonoBehaviour {
 
-    Canvas Houthi1;
-    Canvas Houthi2;
-    Canvas Houthi3;
-    Canvas Houthi4;
-
-    bool activated = false;
+    subtitleController subtitles;
 
     // Use this for initialization
     void Start()
     {
-        Houthi1 = GameObject.Find("Houthi1").GetComponentInChildren<Canvas>();
-        Houthi1.enabled = false;
-        Houthi2 = GameObject.Find("Houthi2").GetComponentInChildren<Canvas>();
-        Houthi2.enabled = false;
-        Houthi3 = GameObject.Find("Houthi3").GetComponentInChildren<Canvas>();
-        Houthi3.enabled = false;
-        Houthi4 = GameObject.Find("Houthi4").GetComponentInChildren<Canvas>();
-        Houthi4.enabled = false;
+        subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !activated)
+        if (other.tag == "Player")
         {
-            StartCoroutine(showText());
+            subtitles.updateQueue("Houthi 1:\nWhat happened upstairs? It sounded like a bomb.",6);
+            subtitles.updateQueue("Houthi 2:\nOf course it was a bomb you Hmar kelb tfou",5);
+            subtitles.updateQueue("Houthi 3:\nThe government forces must suspect we are down here",6);
+            subtitles.updateQueue("Houthi 4:\nYa Ibn el Sharmouta!",3);
+            subtitles.updateQueue("Houthi 2:\nThe power is out. People are dying. We need to get it running straight away",7);
+            subtitles.updateQueue("Houthi 1:\n<b><color=#8D0000FF>Take this fuel to Aamir in the generator room next door</color></b>. We sent him in there earlier but he hasn’t come back", 7);
         }
     }
 
-    IEnumerator showText()
+    private void OnTriggerExit(Collider other)
     {
-        activated = true;
-
-        Houthi3.enabled = true;
-        Houthi3.GetComponentInChildren<Text>().text = "What happened upstairs? It sounded like a bomb.";
-        yield return new WaitForSeconds(7);
-        Houthi3.enabled = false;
-
-        Houthi4.enabled = true;
-        Houthi4.GetComponentInChildren<Text>().text = "Of course it was a bomb you Hmar kelb tfou";
-        yield return new WaitForSeconds(7);
-        Houthi4.enabled = false;
-
-        Houthi2.enabled = true;
-        Houthi2.GetComponentInChildren<Text>().text = "The government forces must suspect we are down here";
-        yield return new WaitForSeconds(7);
-        Houthi2.enabled = false;
-
-        Houthi1.enabled = true;
-        Houthi1.GetComponentInChildren<Text>().text = "Ya Ibn el Sharmouta!";
-        yield return new WaitForSeconds(7);
-        Houthi1.enabled = false;
-
-        Houthi4.enabled = true;
-        Houthi4.GetComponentInChildren<Text>().text = "The power is out. People are dying. We need to get it running straight away";
-        yield return new WaitForSeconds(7);
-        Houthi4.enabled = false;
-
-        Houthi3.enabled = true;
-        Houthi3.GetComponentInChildren<Text>().text = "Take this fuel to Aamir in the generator room next door. We sent him in there earlier but he hasn’t come back";
-        yield return new WaitForSeconds(7);
-        Houthi3.enabled = false;
+        subtitles.stopDisplay();
     }
 }

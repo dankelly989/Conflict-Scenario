@@ -13,8 +13,6 @@ public class Generator : MonoBehaviour {
     GameObject siren;
     DoubleDoorOpen hall;
     BoxCollider exitStopper3;
-    GameObject YemenDoctor1;
-    GameObject YemenDoctor2;
 
     void Start()
     {
@@ -26,9 +24,6 @@ public class Generator : MonoBehaviour {
         siren.GetComponent<AudioSource>().enabled = false;
         hall = GameObject.Find("EndOfHallDoor").GetComponent<DoubleDoorOpen>();
         exitStopper3 = GameObject.Find("exitstopper3").GetComponent<BoxCollider>();
-        YemenDoctor1 = GameObject.Find("YemenDoctor");
-        YemenDoctor2 = GameObject.Find("YemenDoctor2");
-        YemenDoctor2.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -49,8 +44,6 @@ public class Generator : MonoBehaviour {
             siren.GetComponent<AudioSource>().enabled = true;
             hall.active = true;
             exitStopper3.enabled = false;
-            YemenDoctor1.SetActive(false);
-            YemenDoctor2.SetActive(true);
         }
     }
 

@@ -7,7 +7,6 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class BombingSequence : MonoBehaviour
 {
     Animator doctor;
-    Canvas textbox;
     CapsuleCollider doctorCollider;
     Talking doctorTalk;
 
@@ -28,6 +27,8 @@ public class BombingSequence : MonoBehaviour
     public List<GameObject> newObjects;
     bool activated = false;
 
+    subtitleController subtitles;
+
     void Start()
     {
         doctor = GameObject.Find("YemenDoctor").GetComponent<Animator>();
@@ -35,8 +36,6 @@ public class BombingSequence : MonoBehaviour
         doctorCollider.enabled = false;
         doctorTalk = GameObject.Find("YemenDoctor").GetComponent<Talking>();
         doctorTalk.enabled = false;
-        textbox = GameObject.Find("TextBoxCanvas").GetComponent<Canvas>();
-        textbox.enabled = false;
         ward = GameObject.Find("SmallWard").GetComponent<SingleDoorOpen>();
         office = GameObject.Find("SingleDoorRoom").GetComponent<SingleDoorOpen>();
         stairs = GameObject.Find("door L1").GetComponent<SingleDoorOpen>();
@@ -47,6 +46,9 @@ public class BombingSequence : MonoBehaviour
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
         women = GameObject.Find("HallwayWomen");
         sittingWomen = women.GetComponentsInChildren<Animator>();
+
+        subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -74,12 +76,15 @@ public class BombingSequence : MonoBehaviour
 
         //Play sound
         this.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(0.5f);
 
         //screen shake
         controller.walkPermission = false;
         quake.quake();
         RenderSettings.ambientLight = new Color(0.0627451f, 0.0627451f, 0.0627451f, 1);
         doctor.SetTrigger("Bomb");
+
+        subtitles.stopDisplay();
 
         foreach (Animator a in sittingWomen)
         {
@@ -100,13 +105,12 @@ public class BombingSequence : MonoBehaviour
         
         controller.crouch = true;
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(6);
 
         foreach (GameObject g in newObjects)
         {
             g.SetActive(true);
         }
-        controller.walkPermission = true;
 
         doctor.SetTrigger("Stand");
         doctorCollider.enabled = true;
@@ -119,8 +123,6 @@ public class BombingSequence : MonoBehaviour
         exitStopper4.enabled = false;
         stairs.active = true;
 
-        yield return new WaitForSeconds(1);
-
         RenderSettings.ambientLight = new Color(0.1254902f, 0.1254902f, 0.1254902f, 1);
 
         //Lights flicker
@@ -132,5 +134,7 @@ public class BombingSequence : MonoBehaviour
         lights[18].Startflicker();
         lights[21].Startflicker();
         lights[23].Startflicker();
+
+        controller.walkPermission = true;
     }
 }

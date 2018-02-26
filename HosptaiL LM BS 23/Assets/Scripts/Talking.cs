@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class Talking : MonoBehaviour {
 
-    Canvas textbox;
-    Text workerText;
     storeVariables variables;
+    subtitleController subtitles;
     public List<string> talking;
     public List<string> AfterGeneratortalking;
+
+    public List<int> times;
+    public List<int> AfterGeneratortimes;
 
     // Use this for initialization
     void Start()
     {
-        textbox = this.GetComponentInChildren<Canvas>();
-        textbox.enabled = false;
-        workerText = textbox.GetComponentInChildren<Text>();
         variables = GameObject.Find("Variables").GetComponent<storeVariables>();
+        subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -26,44 +26,34 @@ public class Talking : MonoBehaviour {
         {
             if (other.tag == "Player" && talking.Count > 0)
             {
-                textbox.enabled = true;
-                StartCoroutine(showPreBombText());
+                int i = 0;
+                foreach (string s in talking)
+                {
+                    subtitles.updateQueue(s,times[i]);
+                    i++;
+                }
             }
         }
         else
         {
             if (other.tag == "Player" && AfterGeneratortalking.Count > 0)
             {
-                textbox.enabled = true;
-                StartCoroutine(showPostBombText());
+                int i = 0;
+                foreach (string s in AfterGeneratortalking)
+                {
+                    subtitles.updateQueue(s,AfterGeneratortimes[i]);
+                    i++;
+                }
             }
         }
         
-    }
-
-    IEnumerator showPreBombText()
-    {
-        foreach (string s in talking)
-        {
-            workerText.text = s;
-            yield return new WaitForSeconds(7);
-        }
-    }
-
-    IEnumerator showPostBombText()
-    {
-        foreach (string s in AfterGeneratortalking)
-        {
-            workerText.text = s;
-            yield return new WaitForSeconds(7);
-        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            textbox.enabled = false;
+            subtitles.stopDisplay();
         }
     }
 }

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class ReceptionControl : MonoBehaviour {
 
     public List<Flicker> lights;
-    Canvas textbox;
-    Text workerText;
     GameObject cones;
     storeVariables variables;
     bool visited = false;
@@ -15,16 +13,17 @@ public class ReceptionControl : MonoBehaviour {
     Image TextCanvas;
     Text CameraText;
 
+    subtitleController subtitles;
+
     // Use this for initialization
     void Start () {
-        textbox = GameObject.Find("WorkerTextBox").GetComponent<Canvas>();
-        textbox.enabled = false;
-        workerText = GameObject.Find("WorkerText").GetComponent<Text>();
         cones = GameObject.Find("cones");
         cones.SetActive(false);
         variables = GameObject.Find("Variables").GetComponent<storeVariables>();
         TextCanvas = GameObject.Find("CameraBackground").GetComponent<Image>();
         CameraText = GameObject.Find("CameraText").GetComponent<Text>();
+
+        subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
 
         foreach (Flicker f in lights)
         {
@@ -36,19 +35,18 @@ public class ReceptionControl : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            textbox.enabled = true;
-            StartCoroutine(showText());
+            showText();
         }
     }
 
-    IEnumerator showText()
+    private void showText()
     {
         if (!visited)
         {
+            subtitles.stopDisplay();
             foreach (string s in talking)
             {
-                workerText.text = s;
-                yield return new WaitForSeconds(7);
+                subtitles.updateQueue(s,7);
             }
         }
 
@@ -56,25 +54,17 @@ public class ReceptionControl : MonoBehaviour {
         {
             if (!cones.active)
             {
-                workerText.text = "Pass me those cones. I can use them to mark off the area so no one wanders into this bomb. Now we must leave immediately.";
-               yield return new WaitForSeconds(7);
+                subtitles.updateQueue("Pass me those cones. I can use them to mark off the area so no one wanders into this bomb. <b><color=#8D0000FF>Now we must leave immediately.</color></b>", 7);
                 cones.SetActive(true);
+                variables.placedCones = true;
                 visited = false;
-                StartCoroutine(showCameraText());
+                StartCoroutine(showCameraText());   
             }
         }
         else
         {
-            workerText.text = "Go find some orange cones to mark this one off so I don’t have to keep standing in front of it.";
+            subtitles.updateQueue("Go <b><color=#8D0000FF>find some orange cones</color></b> to mark this one off so I don’t have to keep standing in front of it. <b><color=#8D0000FF>Try the closet by reception</color></b>", 7);
             visited = true;
-        }
-    }
-
-        private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            textbox.enabled = false;
         }
     }
 
