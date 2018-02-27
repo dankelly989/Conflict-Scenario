@@ -7,41 +7,40 @@ public class Talking : MonoBehaviour {
 
     storeVariables variables;
     subtitleController subtitles;
-    public List<string> talking;
-    public List<string> AfterGeneratortalking;
 
-    public List<int> times;
-    public List<int> AfterGeneratortimes;
+    public TextAsset text;
+    public TextAsset AfterGeneratorText;
 
     // Use this for initialization
     void Start()
     {
         variables = GameObject.Find("Variables").GetComponent<storeVariables>();
         subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
+        Debug.Log(text.text);
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (!variables.generatorOn)
         {
-            if (other.tag == "Player" && talking.Count > 0)
+            if (other.tag == "Player" && text.text.Length > 0)
             {
-                int i = 0;
-                foreach (string s in talking)
+                string[] speech = text.text.Split('\n');
+                for (int i = 0; i < speech.Length; i++)
                 {
-                    subtitles.updateQueue(s,times[i]);
+                    subtitles.updateQueue(speech[i], int.Parse(speech[i + 1]));
                     i++;
                 }
             }
         }
         else
         {
-            if (other.tag == "Player" && AfterGeneratortalking.Count > 0)
+            if (other.tag == "Player" && AfterGeneratorText.text.Length > 0)
             {
-                int i = 0;
-                foreach (string s in AfterGeneratortalking)
+                string[] speech = AfterGeneratorText.text.Split('\n');
+                for (int i = 0; i < speech.Length; i++)
                 {
-                    subtitles.updateQueue(s,AfterGeneratortimes[i]);
+                    subtitles.updateQueue(speech[i], int.Parse(speech[i+1]));
                     i++;
                 }
             }

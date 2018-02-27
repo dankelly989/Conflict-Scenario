@@ -9,11 +9,12 @@ public class ReceptionControl : MonoBehaviour {
     GameObject cones;
     storeVariables variables;
     bool visited = false;
-    public List<string> talking;
     Image TextCanvas;
     Text CameraText;
 
     subtitleController subtitles;
+
+    public TextAsset text;
 
     // Use this for initialization
     void Start () {
@@ -44,9 +45,11 @@ public class ReceptionControl : MonoBehaviour {
         if (!visited)
         {
             subtitles.stopDisplay();
-            foreach (string s in talking)
+            string[] speech = text.text.Split('\n');
+            for (int i = 0; i < speech.Length; i++)
             {
-                subtitles.updateQueue(s,7);
+                subtitles.updateQueue(speech[i], int.Parse(speech[i + 1]));
+                i++;
             }
         }
 
@@ -54,7 +57,7 @@ public class ReceptionControl : MonoBehaviour {
         {
             if (!cones.active)
             {
-                subtitles.updateQueue("Pass me those cones. I can use them to mark off the area so no one wanders into this bomb. <b><color=#8D0000FF>Now we must leave immediately.</color></b>", 7);
+                subtitles.updateQueue("<b><color=#ffffffff>Doctor:</color></b> Pass me those cones. I can use them to mark off the area so no one wanders into this bomb. <b><color=#8D0000FF>Now we must leave immediately.</color></b>", 7);
                 cones.SetActive(true);
                 variables.placedCones = true;
                 visited = false;
@@ -63,7 +66,7 @@ public class ReceptionControl : MonoBehaviour {
         }
         else
         {
-            subtitles.updateQueue("Go <b><color=#8D0000FF>find some orange cones</color></b> to mark this one off so I don’t have to keep standing in front of it. <b><color=#8D0000FF>Try the closet by reception</color></b>", 7);
+            subtitles.updateQueue("<b><color=#ffffffff>Doctor:</color></b> Go <b><color=#8D0000FF>find some orange cones</color></b> to mark this one off so I don’t have to keep standing in front of it. <b><color=#8D0000FF>Try the closet by reception</color></b>", 7);
             visited = true;
         }
     }

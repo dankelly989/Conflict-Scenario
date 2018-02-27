@@ -1,0 +1,12 @@
+<b><color=#ffffffff>Houthi 1:</color></b> What happened upstairs? It sounded like a bomb.
+6
+<b><color=#ffffffff>Houthi 2:</color></b> Of course it was a bomb you Hmar kelb tfou
+5
+<b><color=#ffffffff>Houthi 3:</color></b> The government forces must suspect we are down here
+6
+<b><color=#ffffffff>Houthi 4:</color></b> Ya Ibn el Sharmouta!
+3
+<b><color=#ffffffff>Houthi 2:</color></b> The power is out. People are dying. We need to get it running straight away
+5
+<b><color=#ffffffff>Houthi 1:</color></b> <b><color=#8D0000FF>Take this fuel to Aamir in the generator room next door</color></b>. We sent him in there earlier but he hasn’t come back
+7
