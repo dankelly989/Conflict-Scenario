@@ -6,11 +6,17 @@ public class audioController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        GetComponent<AudioSource>().Play();
+        if (other.tag == "Player")
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        GetComponent<AudioSource>().Stop();
+        if (other.tag == "Player")
+        {
+            GetComponent<AudioSource>().Stop();
+        }
     }
 }
