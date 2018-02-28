@@ -15,7 +15,7 @@ namespace VRStandardAssets.Utils
 
 
         [SerializeField] private float m_SelectionDuration = 2f;                                // How long it takes for the bar to fill.
-        [SerializeField] private bool m_HideOnStart = true;                                     // Whether or not the bar should be visible at the start.
+        [SerializeField] private bool m_HideOnStart = false;                                     // Whether or not the bar should be visible at the start.
         [SerializeField] private Image m_Selection;                                             // Reference to the image who's fill amount is adjusted to display the bar.
         [SerializeField] private VRInput m_VRInput;                                             // Reference to the VRInput so that input events can be subscribed to.
         

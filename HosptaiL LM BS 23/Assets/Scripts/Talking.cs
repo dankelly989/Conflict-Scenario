@@ -16,7 +16,6 @@ public class Talking : MonoBehaviour {
     {
         variables = GameObject.Find("Variables").GetComponent<storeVariables>();
         subtitles = GameObject.Find("Subtitles").GetComponent<subtitleController>();
-        Debug.Log(text.text);
     }
 
     void OnTriggerEnter(Collider other)
